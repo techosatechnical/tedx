@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
           </p>
           <h2 className="text-2xl font-bold text-black mt-8">2. How We Use Your Information</h2>
           <p>
-            The information you provide is used strictly for event communication, registration processing, and improving our attendees' experience. We do not sell or share your data with third parties without your explicit consent.
+            The information you provide is used strictly for event communication, registration processing, and improving our attendees&apos; experience. We do not sell or share your data with third parties without your explicit consent.
           </p>
           <p className="italic text-gray-500 mt-10">
             This is a placeholder for the official TEDxThaltej Youth Privacy Policy.

@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export const metadata = {
   title: 'Press Releases | TEDxThaltej Youth',
   description: 'Stay up to date with the latest announcements and stories from TEDxThaltej Youth.',

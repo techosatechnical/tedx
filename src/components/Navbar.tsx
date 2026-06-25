@@ -2,13 +2,21 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import React, { useState, useRef, useEffect } from 'react';
 import logoBlack from '../assets/logo-black.png';
 
 export default function Navbar() {
   const [isMoreOpen, setIsMoreOpen] = useState(false);
   const [isPolicyOpen, setIsPolicyOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  
+  // Mobile accordion states
+  const [mobileMoreOpen, setMobileMoreOpen] = useState(false);
+  const [mobileNotificationsOpen, setMobileNotificationsOpen] = useState(false);
+  const [mobileSpeakersOpen, setMobileSpeakersOpen] = useState(false);
+  const [mobilePolicyOpen, setMobilePolicyOpen] = useState(false);
+
   const moreRef = useRef<HTMLDivElement>(null);
   const policyRef = useRef<HTMLDivElement>(null);
 
@@ -38,8 +46,12 @@ export default function Navbar() {
             <Image alt="TEDx Logo" loading="lazy" width={168} height={90} src={logoBlack} />
           </Link>
           
-          <button className="md:hidden text-gray-700" aria-label="Toggle mobile menu">
-            <Menu className="w-7 h-7" />
+          <button 
+            className="md:hidden text-gray-700" 
+            aria-label="Toggle mobile menu"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
           </button>
           
           <div className="hidden md:flex flex-1 justify-center space-x-6 text-md font-light text-black items-center">
@@ -110,6 +122,102 @@ export default function Navbar() {
             </div>
           </div>
         </div>
+
+        {/* Mobile Navigation Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden w-full bg-white border-t flex flex-col py-2 px-6">
+            <Link href="/" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+            <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLScj-rwj-N_e9VfMcRxP1ciCkLHSnnWoVWngFuQUSDDQU8WdZA/viewform" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Speaker Application</a>
+            <Link href="/team" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Our Team</Link>
+            <Link href="/pressrelease" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Press Release</Link>
+            <Link href="https://www.tedxthaltejyouth.in/tedxassist-ai" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>TEDxAssist</Link>
+            <Link href="/gallery" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link>
+            
+            {/* Mobile More Accordion */}
+            <div className="border-b">
+              <div 
+                className="flex items-center justify-between py-3 cursor-pointer text-gray-800 hover:text-red-500"
+                onClick={() => {
+                  setMobileMoreOpen(!mobileMoreOpen);
+                  if (!mobileMoreOpen) setMobilePolicyOpen(false); // Accordion behavior
+                }}
+              >
+                <Link href="/teamphotos" onClick={(e) => { e.stopPropagation(); setIsMobileMenuOpen(false); }}>More</Link>
+                <button type="button" aria-label="Toggle More"><ChevronDown className={`w-4 h-4 transition-transform ${mobileMoreOpen ? 'rotate-180' : ''}`} /></button>
+              </div>
+              
+              {mobileMoreOpen && (
+                <div className="pl-4 flex flex-col pb-2">
+                  
+                  {/* Notifications Accordion inside More */}
+                  <div>
+                    <div 
+                      className="flex items-center justify-between py-2 cursor-pointer text-gray-700 hover:text-red-500"
+                      onClick={() => {
+                        setMobileNotificationsOpen(!mobileNotificationsOpen);
+                        if (!mobileNotificationsOpen) setMobileSpeakersOpen(false); // Accordion behavior
+                      }}
+                    >
+                      <Link href="/notification" onClick={(e) => { e.stopPropagation(); setIsMobileMenuOpen(false); }}>Notifications</Link>
+                      <button type="button"><ChevronDown className={`w-4 h-4 transition-transform ${mobileNotificationsOpen ? 'rotate-180' : ''}`} /></button>
+                    </div>
+                    {mobileNotificationsOpen && (
+                      <div className="pl-4 flex flex-col py-1">
+                        <Link href="/verify" className="py-2 text-gray-600 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Documents Verifier</Link>
+                        <Link href="/auditreports" className="py-2 text-gray-600 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Audit Reports</Link>
+                      </div>
+                    )}
+                  </div>
+
+                  <Link href="/blog" className="py-2 text-gray-700 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
+                  <Link href="/theme" className="py-2 text-gray-700 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Theme</Link>
+                  <Link href="/collaborators" className="py-2 text-gray-700 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Collaborators</Link>
+                  
+                  {/* Speakers Accordion inside More */}
+                  <div>
+                    <div 
+                      className="flex items-center justify-between py-2 cursor-pointer text-gray-700 hover:text-red-500"
+                      onClick={() => {
+                        setMobileSpeakersOpen(!mobileSpeakersOpen);
+                        if (!mobileSpeakersOpen) setMobileNotificationsOpen(false); // Accordion behavior
+                      }}
+                    >
+                      <Link href="/speakers" onClick={(e) => { e.stopPropagation(); setIsMobileMenuOpen(false); }}>Speakers</Link>
+                      <button type="button"><ChevronDown className={`w-4 h-4 transition-transform ${mobileSpeakersOpen ? 'rotate-180' : ''}`} /></button>
+                    </div>
+                    {mobileSpeakersOpen && (
+                      <div className="pl-4 flex flex-col py-1">
+                        <Link href="/teasers" className="py-2 text-gray-600 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Teasers</Link>
+                        <Link href="/application-status" className="py-2 text-gray-600 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Application status</Link>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Mobile Policy Documents Accordion */}
+            <div className="border-b">
+              <div 
+                className="flex items-center justify-between py-3 cursor-pointer text-gray-800 hover:text-red-500"
+                onClick={() => {
+                  setMobilePolicyOpen(!mobilePolicyOpen);
+                  if (!mobilePolicyOpen) setMobileMoreOpen(false); // Accordion behavior
+                }}
+              >
+                <Link href="/policydocuments" onClick={(e) => { e.stopPropagation(); setIsMobileMenuOpen(false); }}>Policy Documents</Link>
+                <button type="button" aria-label="Toggle Policy"><ChevronDown className={`w-4 h-4 transition-transform ${mobilePolicyOpen ? 'rotate-180' : ''}`} /></button>
+              </div>
+              
+              {mobilePolicyOpen && (
+                <div className="pl-4 flex flex-col pb-2">
+                  <Link href="/faq" className="py-2 text-gray-600 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>FAQ</Link>
+                </div>
+              )}
+            </div>
+            
+          </div>
+        )}
       </nav>
     </header>
   );

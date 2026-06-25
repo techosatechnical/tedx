@@ -36,7 +36,7 @@ export default function TeamPage() {
       <div className="max-w-6xl mx-auto px-6 mt-20">
         {teamMembers.length > 0 ? (
           <div className="flex flex-col gap-24">
-            {teamMembers.map((member: any) => (
+            {teamMembers.map((member: typeof teamMembers[0]) => (
               <div key={member._id} className="flex flex-col md:flex-row items-start gap-12 group">
 
                 {/* Image Section */}
