@@ -9,6 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        'ted-red': '#EB0028',
+        'ted-black': '#000000',
+        'ted-white': '#ffffff',
+        'ted-gray': '#f3f4f6',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
