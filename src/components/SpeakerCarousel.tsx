@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const speakers = [
@@ -43,7 +44,7 @@ export default function SpeakerCarousel() {
           {speakers.map((speaker, idx) => (
             <div key={idx} className="min-w-[300px] md:min-w-[350px] snap-center group relative overflow-hidden rounded-xl bg-gray-900 border border-white/10 transition-transform duration-500 hover:-translate-y-2">
               <div className="aspect-[4/5] relative overflow-hidden">
-                <img 
+                <Image 
                   src={speaker.image} 
                   alt={speaker.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-80 group-hover:opacity-100"

@@ -33,7 +33,7 @@ const speakers = [
   }
 ];
 
-const SpeakerCard = ({ speaker }: { speaker: { id: number; name: string; designation: string; bio: string; fullBio: string; image: any } }) => {
+const SpeakerCard = ({ speaker }: { speaker: { id: number; name: string; designation: string; bio: string; fullBio: string; image: import('next/image').StaticImageData } }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
