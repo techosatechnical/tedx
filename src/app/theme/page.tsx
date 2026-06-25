@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { Globe, Sparkles, MessageCircle, Users } from 'lucide-react';
-import img1 from '../../assets/img1.jpg';
 import theme from '../../assets/theme.png';
 
 export default function ThemePage() {

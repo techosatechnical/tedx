@@ -13,8 +13,6 @@ const galleryImages = [
   "/gallery/1753877566751-54591295034_4573ee0e56_c.jpg",
   "/gallery/1753877538865-54591101656_d1c7985f64_c.jpg",
   "/gallery/1753877522550-54590222992_a9e8081b3c_c.jpg",
-  "/gallery/1753877466441-54591414100_4ba46a1ab3_c (1).jpg",
-  "/gallery/1753877448377-54591292509_7b05d26b24_c.jpg"
 ];
 
 export default function GalleryPage() {
