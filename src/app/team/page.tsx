@@ -3,8 +3,8 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import fenilImage from '@/assets/fenil-shah.jpg';
 
 export const metadata = {
-  title: 'Our Team | TEDxThaltej Youth',
-  description: 'Meet the passionate individuals working behind the scenes to make TEDxThaltej Youth an unforgettable experience.',
+  title: 'Our Team | TEDx Chinmaya Vidyalaya Attukal Youth',
+  description: 'Meet the passionate individuals working behind the scenes to make TEDx Chinmaya Vidyalaya Attukal Youth an unforgettable experience.',
 };
 
 const teamMembers = [
@@ -12,7 +12,7 @@ const teamMembers = [
     _id: "696b891b22591a89f66121a7",
     name: "Fenil Shah",
     position: "Organizer & Licensee",
-    about: "Fenil Pritesh Shah is a student, writer, and institution builder with a passion for learning, leadership, and creating meaningful impact. He is currently pursuing a Bachelor of Science in Management (Business Analytics) at Ahmedabad University. Apart from serving as the Organizer of TEDxThaltej Youth, Fenil leads and contributes to several initiatives focused on research, publishing, education, and youth engagement. He is committed to building platforms that encourage knowledge creation, intellectual dialogue, and long-term social development. Fenil is also an author and TED Translator.",
+    about: "Fenil Pritesh Shah is a student, writer, and institution builder with a passion for learning, leadership, and creating meaningful impact. He is currently pursuing a Bachelor of Science in Management (Business Analytics) at Ahmedabad University. Apart from serving as the Organizer of TEDx Chinmaya Vidyalaya Attukal Youth, Fenil leads and contributes to several initiatives focused on research, publishing, education, and youth engagement. He is committed to building platforms that encourage knowledge creation, intellectual dialogue, and long-term social development. Fenil is also an author and TED Translator.",
     image: fenilImage,
     socials: {
       linkedin: "https://www.linkedin.com/in/fenil-shah-729822271/"

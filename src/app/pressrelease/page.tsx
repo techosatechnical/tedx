@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Press Releases | TEDxThaltej Youth',
-  description: 'Stay up to date with the latest announcements and stories from TEDxThaltej Youth.',
+  title: 'Press Releases | TEDx Chinmaya Vidyalaya Attukal Youth',
+  description: 'Stay up to date with the latest announcements and stories from TEDx Chinmaya Vidyalaya Attukal Youth.',
 };
 
 const pressReleases = [
@@ -50,7 +50,7 @@ export default function PressReleasePage() {
                 key={pr._id} 
                 className="bg-[#f5f5f5] rounded-xl p-8 shadow-sm border border-gray-100 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md"
               >
-                <p className="text-xs text-gray-500 font-bold tracking-widest uppercase mb-3">TEDxThaltej</p>
+                <p className="text-xs text-gray-500 font-bold tracking-widest uppercase mb-3">TEDx Chinmaya Vidyalaya Attukal</p>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4 leading-tight">{pr.title}</h3>
                 <p className="text-sm text-gray-500 mb-8 capitalize">{pr.date}</p>
                 

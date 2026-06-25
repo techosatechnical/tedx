@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "TEDxThaltejYouth",
+  title: "TEDx Chinmaya Vidyalaya Attukal Youth",
   description: "Independent TEDx event operated under license from TED.",
 };
 

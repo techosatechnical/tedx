@@ -10,7 +10,7 @@ export default function TermsPage() {
         <div className="prose prose-lg text-gray-700 space-y-6">
           <p className="font-semibold">Last updated: June 2026</p>
           <p>
-            Welcome to TEDxThaltej Youth. By accessing our website and attending our event, you agree to be bound by the following terms and conditions.
+            Welcome to TEDx Chinmaya Vidyalaya Attukal Youth. By accessing our website and attending our event, you agree to be bound by the following terms and conditions.
           </p>
           <h2 className="text-2xl font-bold text-black mt-8">1. Event Guidelines</h2>
           <p>
@@ -18,10 +18,10 @@ export default function TermsPage() {
           </p>
           <h2 className="text-2xl font-bold text-black mt-8">2. Ticketing and Refunds</h2>
           <p>
-            All ticket sales are final. Refunds will only be issued in the event of a total cancellation of TEDxThaltej Youth. Tickets are non-transferable unless explicit permission is granted by the organizing team.
+            All ticket sales are final. Refunds will only be issued in the event of a total cancellation of TEDx Chinmaya Vidyalaya Attukal Youth. Tickets are non-transferable unless explicit permission is granted by the organizing team.
           </p>
           <p className="italic text-gray-500 mt-10">
-            This is a placeholder for the official TEDxThaltej Youth Terms and Conditions.
+            This is a placeholder for the official TEDx Chinmaya Vidyalaya Attukal Youth Terms and Conditions.
           </p>
         </div>
       </div>

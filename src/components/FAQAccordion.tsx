@@ -5,8 +5,8 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   {
-    question: "What is TEDxThaltejYouth?",
-    answer: "TEDxThaltejYouth is an independently organized TED event specifically focused on bringing together bright young minds in Thaltej and surrounding areas to share ideas that inspire and create impact."
+    question: "What is TEDx Chinmaya Vidyalaya Attukal Youth?",
+    answer: "TEDx Chinmaya Vidyalaya Attukal Youth is an independently organized TED event specifically focused on bringing together bright young minds in Thaltej and surrounding areas to share ideas that inspire and create impact."
   },
   {
     question: "Who can attend the event?",

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import vision1 from '../assets/vision1.png';
-import logoBlack from '../assets/logo-black.png';
+import logoBlack from '../assets/TEDx black.png';
 
 export default function VisionSection() {
   return (
@@ -13,7 +13,7 @@ export default function VisionSection() {
       
       <div className="max-w-4xl mx-auto px-4 space-y-4 mb-12 mt-8">
         <p className="text-xl text-gray-700 leading-relaxed font-light">
-          TEDxThaltejYouth is dedicated to amplifying the voices of the next generation. We believe in the power of youth to drive meaningful change, spark innovation, and challenge the status quo.
+          TEDx Chinmaya Vidyalaya Attukal Youth is dedicated to amplifying the voices of the next generation. We believe in the power of youth to drive meaningful change, spark innovation, and challenge the status quo.
         </p>
         <p className="text-lg text-gray-600 leading-relaxed">
           Our platform serves as a catalyst for brilliant minds across diverse disciplines to share their unique perspectives. Whether it&#x27;s technology, arts, science, or social entrepreneurship, we bring together ideas that have the potential to shape our collective future.

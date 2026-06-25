@@ -27,7 +27,7 @@ export default function Home() {
             {[
               {
                 title: "Youth Empowerment",
-                description: "At TEDx Thaltej Youth, our mission is to create a platform where ideas worth spreading are shared with young minds."
+                description: "At TEDx Chinmaya Vidyalaya Attukal Youth, our mission is to create a platform where ideas worth spreading are shared with young minds."
               },
               {
                 title: "Inspiring Change",
@@ -59,7 +59,7 @@ export default function Home() {
             Watch Our <span className="text-[#EB0129]">Vision</span> in Action
           </h2>
           <p className="text-lg text-gray-300 mb-8">
-            Experience the spirit of TEDxThaltej Youth through our latest highlight video.
+            Experience the spirit of TEDx Chinmaya Vidyalaya Attukal Youth through our latest highlight video.
           </p>
           <div className="w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden border-4 border-red-600 shadow-lg">
             <iframe
@@ -80,14 +80,14 @@ export default function Home() {
         <div className="max-w-6xl w-full">
           <div className="text-center mb-12">
             <h1 className="md:text-5xl text-3xl font-bold text-gray-900 mb-4">
-              About <span className="text-[#EA0028]">TEDx</span>Thaltej Youth
+              About <span className="text-[#EA0028]">TEDx</span>Chinmaya Vidyalaya Attukal Youth
             </h1>
           </div>
           <div className="grid gap-8 grid-cols-1 sm:grid-cols-2">
             {[
               {
                 title: "Empowering Young Minds",
-                description: "TEDxThaltej Youth is a student-organized TEDx event designed to empower young minds and foster transformative ideas within our community."
+                description: "TEDx Chinmaya Vidyalaya Attukal Youth is a student-organized TEDx event designed to empower young minds and foster transformative ideas within our community."
               },
               {
                 title: "Shaping the Future of Education",
@@ -172,7 +172,7 @@ export default function Home() {
           </div>
           <div>
             <p className="text-black text-lg leading-relaxed">
-              TEDx Youth events are independently organized TEDx events designed specifically for and by young people, giving them a platform to share ideas, inspire action, and spark meaningful conversations. These events provide a unique opportunity to showcase youth-driven innovation, creativity, and leadership. With a focus on empowering the next generation, TEDx Youth events feature inspiring talks from students, educators, and thought leaders, all aimed at shaping a better future. TEDxThaltej Youth is part of this global initiative, aiming to amplify the voices of young changemakers and create a ripple effect of ideas worth spreading.
+              TEDx Youth events are independently organized TEDx events designed specifically for and by young people, giving them a platform to share ideas, inspire action, and spark meaningful conversations. These events provide a unique opportunity to showcase youth-driven innovation, creativity, and leadership. With a focus on empowering the next generation, TEDx Youth events feature inspiring talks from students, educators, and thought leaders, all aimed at shaping a better future. TEDx Chinmaya Vidyalaya Attukal Youth is part of this global initiative, aiming to amplify the voices of young changemakers and create a ripple effect of ideas worth spreading.
             </p>
           </div>
         </div>
@@ -199,10 +199,10 @@ export default function Home() {
                 <span className="text-black">TEDx events are designed to serve as a platform for sharing &quot;ideas worth spreading,&quot; and this naturally includes using languages that resonate most with your audience. Organizers are encouraged to embrace linguistic diversity as it can reflect and celebrate the multicultural makeup of a community.</span>
               </p>
               <p className="text-black text-md leading-relaxed">
-                TEDxThaltej Youth is designed for a diverse audience, including students, educators, professionals, and idea enthusiasts. Anyone eager to learn and engage in powerful discussions is welcome.
+                TEDx Chinmaya Vidyalaya Attukal Youth is designed for a diverse audience, including students, educators, professionals, and idea enthusiasts. Anyone eager to learn and engage in powerful discussions is welcome.
               </p>
               <p className="text-black text-md leading-relaxed">
-                Applications for TEDxThaltej Youth 2026 in November 2025. Stay updated by subscribing to our mailing list.
+                Applications for TEDx Chinmaya Vidyalaya Attukal Youth 2026 in November 2025. Stay updated by subscribing to our mailing list.
               </p>
             </div>
             <div className="relative h-full flex flex-col">
@@ -229,7 +229,7 @@ export default function Home() {
           <div className="relative max-w-6xl mx-auto px-6 py-12 rounded-2xl hover:bg-[#F3F4F6] shadow-2xl overflow-hidden transition-all duration-500">
             <div className="relative z-10">
               <p className="text-black">
-                TEDxThaltej Youth is officially certified under two globally recognized ISO standards. These certifications reflect our commitment to high-quality event management and sustainability in everything we do.
+                TEDx Chinmaya Vidyalaya Attukal Youth is officially certified under two globally recognized ISO standards. These certifications reflect our commitment to high-quality event management and sustainability in everything we do.
               </p>
             </div>
           </div>

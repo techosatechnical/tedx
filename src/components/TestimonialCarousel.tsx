@@ -13,21 +13,21 @@ import t3 from '../assets/testimonial3.png';
 
 const testimonials = [
   {
-    quote: "TEDxThaltej Youth is more than an event, it is a platform where ideas, curiosity, and meaningful conversations come together to inspire action. Our goal is to create an experience that empowers young minds to think differently, learn deeply, and contribute positively to society.",
+    quote: "TEDx Chinmaya Vidyalaya Attukal Youth is more than an event, it is a platform where ideas, curiosity, and meaningful conversations come together to inspire action. Our goal is to create an experience that empowers young minds to think differently, learn deeply, and contribute positively to society.",
     name: "Fenil Pritesh Shah",
-    role: "Organizer, TEDxThaltej Youth",
+    role: "Organizer, TEDx Chinmaya Vidyalaya Attukal Youth",
     image: t1
   },
   {
-    quote: "TEDxThaltej Youth 2025 was a remarkable journey of ideas, learning, and meaningful conversations. Watching young speakers share their experiences and perspectives with such confidence reinforced the importance of creating platforms where youth voices are heard and celebrated. The event brought together curious minds, passionate changemakers, and a community committed to lifelong learning. I am proud to have been part of an initiative that encouraged dialogue, inspired action, and demonstrated the transformative power of ideas worth spreading.",
+    quote: "TEDx Chinmaya Vidyalaya Attukal Youth 2025 was a remarkable journey of ideas, learning, and meaningful conversations. Watching young speakers share their experiences and perspectives with such confidence reinforced the importance of creating platforms where youth voices are heard and celebrated. The event brought together curious minds, passionate changemakers, and a community committed to lifelong learning. I am proud to have been part of an initiative that encouraged dialogue, inspired action, and demonstrated the transformative power of ideas worth spreading.",
     name: "Bindu Raphael",
-    role: "Co-Organizer, TEDxThaltej Youth 2025",
+    role: "Co-Organizer, TEDx Chinmaya Vidyalaya Attukal Youth 2025",
     image: t2
   },
   {
-    quote: "TEDxThaltej Youth 2025 was a celebration of curiosity, innovation, and the limitless potential of young minds. It was inspiring to witness speakers, performers, volunteers, and attendees come together to create an environment where ideas could flourish and meaningful dialogue could take place. The event reflected the power of collaboration, thoughtful planning, and a shared commitment to learning. Being part of this journey reinforced my belief that when young people are given the right platform, they can inspire positive change and shape a brighter future for their communities and beyond.",
+    quote: "TEDx Chinmaya Vidyalaya Attukal Youth 2025 was a celebration of curiosity, innovation, and the limitless potential of young minds. It was inspiring to witness speakers, performers, volunteers, and attendees come together to create an environment where ideas could flourish and meaningful dialogue could take place. The event reflected the power of collaboration, thoughtful planning, and a shared commitment to learning. Being part of this journey reinforced my belief that when young people are given the right platform, they can inspire positive change and shape a brighter future for their communities and beyond.",
     name: "Ms. Archana Damani",
-    role: "Program Director, TEDxThaltej Youth 2025",
+    role: "Program Director, TEDx Chinmaya Vidyalaya Attukal Youth 2025",
     image: t3
   }
 ];

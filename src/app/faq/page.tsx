@@ -6,23 +6,23 @@ import Link from 'next/link';
 
 const faqs = [
   {
-    question: "What is TEDxThaltejYouth?",
-    answer: "TEDxThaltejYouth is an independently organized TEDx event designed to empower young minds by sharing inspiring ideas, innovative thinking, and impactful stories. The event brings together students, professionals, entrepreneurs, artists, and changemakers to spark meaningful conversations and inspire positive action."
+    question: "What is TEDx Chinmaya Vidyalaya Attukal Youth?",
+    answer: "TEDx Chinmaya Vidyalaya Attukal Youth is an independently organized TEDx event designed to empower young minds by sharing inspiring ideas, innovative thinking, and impactful stories. The event brings together students, professionals, entrepreneurs, artists, and changemakers to spark meaningful conversations and inspire positive action."
   },
   {
-    question: "Will I get a certificate for attending TEDxThaltej Youth?",
+    question: "Will I get a certificate for attending TEDx Chinmaya Vidyalaya Attukal Youth?",
     answer: "TEDx events do not provide participation certificates, as the experience is about learning and engagement rather than certification."
   },
   {
-    question: "Is TEDxThaltej Youth open to all age groups?",
-    answer: "Yes! TEDxThaltej Youth is designed for a diverse audience, including students, educators, professionals, and idea enthusiasts. Anyone eager to learn and engage in powerful discussions is welcome."
+    question: "Is TEDx Chinmaya Vidyalaya Attukal Youth open to all age groups?",
+    answer: "Yes! TEDx Chinmaya Vidyalaya Attukal Youth is designed for a diverse audience, including students, educators, professionals, and idea enthusiasts. Anyone eager to learn and engage in powerful discussions is welcome."
   },
   {
-    question: "Can I apply to be a speaker for TEDxThaltej Youth?",
-    answer: "Applications for TEDxThaltej Youth 2025 are now closed. However, we will open applications for TEDxThaltej Youth 2026 in November 2025. Stay updated by subscribing to our mailing list."
+    question: "Can I apply to be a speaker for TEDx Chinmaya Vidyalaya Attukal Youth?",
+    answer: "Applications for TEDx Chinmaya Vidyalaya Attukal Youth 2025 are now closed. However, we will open applications for TEDx Chinmaya Vidyalaya Attukal Youth 2026 in November 2025. Stay updated by subscribing to our mailing list."
   },
   {
-    question: "How are speakers selected for TEDxThaltej Youth?",
+    question: "How are speakers selected for TEDx Chinmaya Vidyalaya Attukal Youth?",
     answer: (
       <div className="space-y-2">
         <p>We open Speaker Applications, where individuals submit their ideas. The selection process includes:</p>
@@ -37,19 +37,19 @@ const faqs = [
     )
   },
   {
-    question: "When and where is TEDxThaltej Youth happening?",
-    answer: "TEDxThaltej Youth 2025 will take place on June 15, 2025, at Ahmedabad Management Association (AMA), Ahmedabad."
+    question: "When and where is TEDx Chinmaya Vidyalaya Attukal Youth happening?",
+    answer: "TEDx Chinmaya Vidyalaya Attukal Youth 2025 will take place on June 15, 2025, at Ahmedabad Management Association (AMA), Ahmedabad."
   },
   {
-    question: "What is TEDxThaltej Youth?",
-    answer: "TEDxThaltej Youth is an independently organized TEDx event dedicated to bringing \"ideas worth spreading\" to young minds. It is a platform for inspiring speakers, engaging discussions, and thought-provoking conversations aimed at shaping the future."
+    question: "What is TEDx Chinmaya Vidyalaya Attukal Youth?",
+    answer: "TEDx Chinmaya Vidyalaya Attukal Youth is an independently organized TEDx event dedicated to bringing \"ideas worth spreading\" to young minds. It is a platform for inspiring speakers, engaging discussions, and thought-provoking conversations aimed at shaping the future."
   },
   {
     question: "Can Speakers deliver their talk in other languages?",
     answer: (
       <div className="space-y-4">
         <p>TEDx events are designed to serve as a platform for sharing &quot;ideas worth spreading,&quot; and this naturally includes using languages that resonate most with your audience. Organizers are encouraged to embrace linguistic diversity as it can reflect and celebrate the multicultural makeup of a community. According to discussions and guidance from TEDx events, the language spoken on stage should ideally match the language spoken during breaks or informal parts of the event, promoting inclusivity and engagement.</p>
-        <p>Accordingly, for TEDxThaltej Youth, talks and on-stage presentations are permitted only in English and Hindi. Speakers are requested to deliver their talks exclusively in either of these approved languages to ensure accessibility, audience engagement, and consistency across the event experience.</p>
+        <p>Accordingly, for TEDx Chinmaya Vidyalaya Attukal Youth, talks and on-stage presentations are permitted only in English and Hindi. Speakers are requested to deliver their talks exclusively in either of these approved languages to ensure accessibility, audience engagement, and consistency across the event experience.</p>
       </div>
     )
   }

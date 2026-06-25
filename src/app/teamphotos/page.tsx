@@ -21,7 +21,7 @@ export default function TeamPhotosPage() {
         <div className="flex-1 space-y-6">
           <div className="flex items-center gap-2 mb-8">
             <h1 className="text-[#EA0028] text-5xl font-extrabold tracking-tight">TEDx</h1>
-            <h2 className="text-5xl font-bold tracking-tight">Thaltej Youth</h2>
+            <h2 className="text-5xl font-bold tracking-tight">Chinmaya Vidyalaya Attukal Youth</h2>
           </div>
 
           <p className="text-xl text-gray-800">Presents</p>
@@ -69,7 +69,7 @@ export default function TeamPhotosPage() {
               {/* Overlaid Theme Text on Thumbnail */}
               <div className="absolute top-4 left-0 right-0 flex justify-center items-center opacity-80">
                 <span className="text-[#EA0028] font-bold text-sm tracking-wider">TEDx</span>
-                <span className="text-white font-bold text-sm ml-1 tracking-wider">Thaltej Youth</span>
+                <span className="text-white font-bold text-sm ml-1 tracking-wider">Chinmaya Vidyalaya Attukal Youth</span>
               </div>
               <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
                 {/* YouTube Play Button */}
@@ -81,7 +81,7 @@ export default function TeamPhotosPage() {
 
               {/* TEDx Website Text at Bottom of Thumbnail */}
               <div className="absolute bottom-0 left-0 right-0 bg-white py-1 text-center">
-                <p className="text-[#EA0028] text-[10px] font-bold">TEDxThaltej Youth Website: www.tedxthaltejyouth.in</p>
+                <p className="text-[#EA0028] text-[10px] font-bold">TEDx Chinmaya Vidyalaya Attukal Youth Website: www.tedxthaltejyouth.in</p>
               </div>
             </div>
 

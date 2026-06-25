@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FaLinkedin as Linkedin, FaInstagram as Instagram, FaYoutube as Youtube } from 'react-icons/fa';
 
-import logoWhite from '../assets/logo-white.png';
+import logoWhite from '../assets/TEDx white.png';
 
 export default function Footer() {
   return (
@@ -27,7 +27,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4">Our community</h4>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li><Link href="/teamphotos">TEDxThaltej 2026</Link></li>
+            <li><Link href="/teamphotos">TEDx Chinmaya Vidyalaya Attukal 2026</Link></li>
             <li><Link href="/team">Our Team</Link></li>
             <li><Link href="/collaborators">Collaborators</Link></li>
             <li><Link href="/speakerverifier">Speaker Verifier</Link></li>
@@ -41,7 +41,7 @@ export default function Footer() {
           <p className="text-sm text-gray-300 mb-6">
             TED Members help billions of people worldwide access inspiring ideas. Plus, they get exclusive benefits like invite-only events with speakers. Join today for a brighter future – and a better you.
           </p>
-          <h4 className="font-semibold mb-3">Follow <span className="text-[#EB0028]">Tedx</span> Thaltej youth</h4>
+          <h4 className="font-semibold mb-3">Follow <span className="text-[#EB0028]">Tedx</span> Chinmaya Vidyalaya<br /> Attukal Youth</h4>
           <div className="flex gap-4 mb-6">
             <a href="https://www.linkedin.com/company/tedxthaltej-youth/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-6 h-6 hover:text-gray-400 cursor-pointer" />
@@ -58,7 +58,7 @@ export default function Footer() {
 
       <hr className="my-10 mx-25 border-gray-700" />
       <p className="text-center text-xs text-white mt-6">
-        © TEDxThaltej Youth 2026 | Licensed by TED | All Rights Reserved
+        © TEDx Chinmaya Vidyalaya Attukal Youth 2026 | Licensed by TED | All Rights Reserved
       </p>
       <p className="text-center md:text-sm text-xs text-white mt-6">
         Developed by Fenil Shah - Copyright © Fenil Shah Publications

@@ -10,7 +10,7 @@ export default function PrivacyPolicyPage() {
         <div className="prose prose-lg text-gray-700 space-y-6">
           <p className="font-semibold">Last updated: June 2026</p>
           <p>
-            At TEDxThaltej Youth, we are committed to protecting your privacy. This policy outlines how we handle your personal information when you visit our website, register for our event, or interact with our community.
+            At TEDx Chinmaya Vidyalaya Attukal Youth, we are committed to protecting your privacy. This policy outlines how we handle your personal information when you visit our website, register for our event, or interact with our community.
           </p>
           <h2 className="text-2xl font-bold text-black mt-8">1. Information We Collect</h2>
           <p>
@@ -21,7 +21,7 @@ export default function PrivacyPolicyPage() {
             The information you provide is used strictly for event communication, registration processing, and improving our attendees&apos; experience. We do not sell or share your data with third parties without your explicit consent.
           </p>
           <p className="italic text-gray-500 mt-10">
-            This is a placeholder for the official TEDxThaltej Youth Privacy Policy.
+            This is a placeholder for the official TEDx Chinmaya Vidyalaya Attukal Youth Privacy Policy.
           </p>
         </div>
       </div>
