@@ -59,7 +59,7 @@ export default function Navbar() {
             <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLScj-rwj-N_e9VfMcRxP1ciCkLHSnnWoVWngFuQUSDDQU8WdZA/viewform" className="hover:text-red-400">Speaker Application</a>
             <Link href="/team" className="hover:text-red-400">Our Team</Link>
             <Link href="/pressrelease" className="hover:text-red-400">Press Release</Link>
-            <Link href="https://www.tedxthaltejyouth.in/tedxassist-ai" className="hover:text-red-500 rounded">TEDxAssist</Link>
+            <Link href="/tedxassist-ai" className="hover:text-red-500 rounded">TEDxAssist</Link>
             <Link href="/gallery" className="hover:bg-white hover:text-red-500 rounded">Gallery</Link>
 
             <div className="relative group cursor-pointer" ref={moreRef}>
@@ -143,7 +143,7 @@ export default function Navbar() {
             <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLScj-rwj-N_e9VfMcRxP1ciCkLHSnnWoVWngFuQUSDDQU8WdZA/viewform" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Speaker Application</a>
             <Link href="/team" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Our Team</Link>
             <Link href="/pressrelease" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Press Release</Link>
-            <Link href="https://www.tedxthaltejyouth.in/tedxassist-ai" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>TEDxAssist</Link>
+            <Link href="/tedxassist-ai" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>TEDxAssist</Link>
             <Link href="/gallery" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link>
 
             {/* Mobile More Accordion */}

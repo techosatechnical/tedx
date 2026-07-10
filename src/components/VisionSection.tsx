@@ -10,13 +10,21 @@ export default function VisionSection() {
         <Image alt="collaboration" loading="lazy" width={35} height={35} src={vision1} className="inline-block" />
         <span className="text-[#EB0028] md:text-5xl text-4xl font-sans md:mr-13 font-semibold tracking-wider">Vision</span>
       </div>
-      
+
       <div className="max-w-4xl mx-auto px-4 space-y-4 mb-12 mt-8">
         <p className="text-xl text-gray-700 leading-relaxed font-light">
-          TEDx Chinmaya Vidyalaya Attukal Youth is dedicated to amplifying the voices of the next generation. We believe in the power of youth to drive meaningful change, spark innovation, and challenge the status quo.
+          At TEDx Chinmaya Vidyalaya Attukal Youth, we believe that life is a magnificent,
+          continuous tapestry of Becoming—a sacred journey where ideas awaken the spirit and
+          ignite deep personal transformation. Our vision is to create a sanctuary where the mind
+          and intellect blossom in perfect harmony, deeply anchored in the fertile soil of our
+          cultural roots yet soaring toward global horizons. True evolution is not solitary; it is the
+          grace of aligning our individual growth with a profound love for our nation and a universal
+          embrace of all humanity.
         </p>
         <p className="text-lg text-gray-600 leading-relaxed">
-          Our platform serves as a catalyst for brilliant minds across diverse disciplines to share their unique perspectives. Whether it&#x27;s technology, arts, science, or social entrepreneurship, we bring together ideas that have the potential to shape our collective future.
+          TEDx Chinmaya Vidyalaya Attukal Youth stands as a radiant
+          catalyst for this awakening, inviting our community to step into the light and gracefully
+          become the visionary change-makers our world is waiting for.
         </p>
       </div>
 

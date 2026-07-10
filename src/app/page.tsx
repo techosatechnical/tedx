@@ -26,16 +26,16 @@ export default function Home() {
           <div className="grid gap-8 grid-cols-1 md:grid-cols-3">
             {[
               {
-                title: "Youth Empowerment",
-                description: "At TEDx Chinmaya Vidyalaya Attukal Youth, our mission is to create a platform where ideas worth spreading are shared with young minds."
+                title: "Nurturing the Whole Being",
+                description: "To serve as a sacred crucible of intellectual and spiritual awakening, where powerful ideas inspire individuals to look within and embrace the profound journey of Becoming. We miss no opportunity to cultivate a sanctuary where the mind, intellect, and heart expand in perfect harmony, empowering our community to shed limitations, realize their highest potential, and step forth as compassionate, resilient architects of a luminous tomorrow."
               },
               {
-                title: "Inspiring Change",
-                description: "We aim to bring together passionate thinkers, educators, and innovators who will challenge conventional perspectives, inspire curiosity, and ignite positive action in the realm of education."
+                title: "Anchored in Heritage, Soaring Globally",
+                description: "To illuminate a stage where the timeless wisdom of our cultural heritage gracefully meets the expansive horizons of tomorrow's world. Our mission is to ensure that the beautiful process of Becoming remains deeply rooted in the fertile, value-rich soil of our traditions, giving our youth the inner stability to wingspan global heights and view the entire world as one interconnected family."
               },
               {
-                title: "Future Forward",
-                description: "Through talks, discussions, and collaborations, we strive to spark a movement that drives the future of education—one that is inclusive, innovative, and accessible for all."
+                title: "Evolution and Sacred Service",
+                description: "To ignite a spark of conscious self-evolution that transforms personal growth into a sacred offering for the world. We are dedicated to sharing ideas that inspire an inner alignment—where individual excellence naturally blossoms into patriotic devotion and universal service—guiding each soul in becoming a mindful leader who uplifts society and walks the earth with grace, purpose, and dignity."
               }
             ].map((mission, i) => (
               <div key={i} className="bg-white rounded-2xl border-4 border-black p-8 hover:-translate-y-2 transition-transform duration-300">
@@ -86,20 +86,20 @@ export default function Home() {
           <div className="grid gap-8 grid-cols-1 sm:grid-cols-2">
             {[
               {
-                title: "Empowering Young Minds",
-                description: "TEDx Chinmaya Vidyalaya Attukal Youth is a student-organized TEDx event designed to empower young minds and foster transformative ideas within our community."
+                title: "The Awakening: Who We Are",
+                description: "Welcome to TEDxChinmaya Vidyalaya Attukal Youth, a luminous arena where the boundless energy of young minds converges with the quiet grace of timeless wisdom. Our event serves as a magnificent canvas where conventional boundaries fade, creating a celebratory space where curiosity is honored, raw potential is kindled, and fresh perspectives are given wings to fly."
               },
               {
-                title: "Shaping the Future of Education",
-                description: "We bring together students, educators, and changemakers to share insights that shape the future of education."
+                title: "The Crucible: Embracing 'Becoming'",
+                description: "In perfect alignment with our theme, we recognize that youth is not a mere waiting room for tomorrow, but a sacred, active dawn of self-discovery. We believe that the young spirit possesses a rare, unblemished clarity—an instinctive capacity to question the old and imagine the unwritten. Our stage is a sanctuary for this evolution, transforming fleeting sparks of inspiration into an enduring flame of conscious personal growth."
               },
               {
-                title: "Future Forward",
-                description: "Through talks, discussions, and collaborations, we strive to spark a movement that drives the future of education—one that is inclusive, innovative, and accessible for all."
+                title: "The Anchor: Rooted in Heritage, Soaring Globally",
+                description: "We champion a journey of excellence where a sharp, modern intellect walks hand-in hand with a deeply compassionate heart. By grounding our vibrant youth in the rich, elegant soil of our cultural identity, we provide them with the inner stability needed to navigate a complex world. From these deep roots, our vision stretches outward, empowering young minds to soar toward global horizons and view the universe as one interconnected family."
               },
               {
-                title: "The Future of Education – A Light Towards Wisdom",
-                description: "Our theme for 2025, “The Future of Education – A Light Towards Wisdom,” invites a new generation to explore innovative ideas and wisdom-driven paths that can illuminate and evolve the educational landscape."
+                title: "The Destiny: Catalysts for Tomorrow",
+                description: "TEDxChinmayaVidyalayaAttukal Youth is ultimately an invitation to witness the extraordinary. We gather to share ideas that bridge individual brilliance with a grander purpose—the uplifting of our society and our nation. This is where tomorrow's leaders gather to shatter limitations, bridge generations, and gracefully step into the light, beautifully becoming the visionary change-makers our world awaits."
               }
             ].map((about, i) => (
               <div key={i} className="bg-white rounded-2xl border-4 border-black p-8 hover:-translate-y-2 transition-transform duration-300">
@@ -119,40 +119,39 @@ export default function Home() {
       {/* What is TEDx Section */}
       <section className="w-full bg-white py-16">
         <div className="max-w-6xl mx-auto px-6 container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
             <div className="space-y-4">
               <div className="bg-[#F9FAFB] p-4 rounded-lg mb-6">
                 <h2 className="md:text-5xl text-3xl text-black text-center">
                   What is <span className="text-[#EA0028] font-bold">TEDx?</span>
                 </h2>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex flex-col gap-4">
                 <div className="bg-[#F9FAFB] p-6 rounded-lg">
-                  <div className="text-3xl font-bold text-black mb-2">01.</div>
-                  <h3 className="text-lg font-bold text-black mb-3">What is TEDx?</h3>
-                  <p className="text-gray-700 text-sm">TEDx is a global initiative by TED to bring the spirit of TED&#x27;s mission, “Ideas Worth Spreading,” to local communities around the world. These independently organized events follow TED&#x27;s format and guidelines.</p>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="text-3xl font-bold text-black">01.</div>
+                    <h3 className="text-lg font-bold text-black">In TEDx, x = independently organized event</h3>
+                  </div>
+                  <p className="text-gray-700 text-sm leading-relaxed">In the spirit of discovering and spreading ideas, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)</p>
                 </div>
                 <div className="bg-white border-2 border-gray-200 p-6 rounded-lg">
-                  <div className="text-3xl font-bold text-black mb-2">02.</div>
-                  <h3 className="text-lg font-bold text-black mb-3">The Power of TEDx Talks</h3>
-                  <p className="text-gray-700 text-sm">At TEDx events, speakers from diverse backgrounds—ranging from technology, entertainment, and design to science, education, and beyond—deliver short, impactful talks on topics they’re passionate about. These talks aim to spark conversations, challenge perspectives, and inspire action.</p>
-                </div>
-                <div className="bg-white border-2 border-gray-200 p-6 rounded-lg">
-                  <div className="text-3xl font-bold text-black mb-2">03.</div>
-                  <h3 className="text-lg font-bold text-black mb-3">Community-Driven Events</h3>
-                  <p className="text-gray-700 text-sm">Each TEDx event is independently organized by a dedicated team of volunteers who carefully curate the event&#x27;s theme, speakers, and activities to reflect the local spirit and interests.</p>
-                </div>
-                <div className="bg-[#F9FAFB] p-6 rounded-lg">
-                  <div className="text-3xl font-bold text-black mb-2">04.</div>
-                  <h3 className="text-lg font-bold text-black mb-3">Inspiring Connection and Change</h3>
-                  <p className="text-gray-700 text-sm">TEDx events are designed not only to inspire audiences but also to foster meaningful connections and a sense of community, driving conversations that can lead to real-world impact.</p>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="text-3xl font-bold text-black">02.</div>
+                    <h3 className="text-lg font-bold text-black">About TED</h3>
+                  </div>
+                  <div className="space-y-4">
+                    <p className="text-gray-700 text-sm leading-relaxed">TED is a nonprofit, nonpartisan organization dedicated to discovering, debating and spreading ideas that spark conversation, deepen understanding and drive meaningful change. Our organization is devoted to curiosity, reason, wonder and the pursuit of knowledge — without an agenda. We welcome people from every discipline and culture who seek a deeper understanding of the world and connection with others, and we invite everyone to engage with ideas and activate them in your community.</p>
+                    <p className="text-gray-700 text-sm leading-relaxed">TED began in 1984 as a conference where Technology, Entertainment and Design converged, but today it spans a multitude of worldwide communities and initiatives exploring everything from science and business to education, arts and global issues. In addition to the TED Talks curated from our annual conferences and published on TED.com, we produce original podcasts, short video series, animated educational lessons (TED-Ed) and TV programs that are translated into more than 100 languages and distributed via partnerships around the world. Each year, thousands of independently run TEDx events. Through the Audacious Project, TED has helped catalyze $6.6 billion in funding for projects that support bold solutions to the world&#x27;s most urgent challenges — working to make the world more beautiful, sustainable and just. In 2020, TED launched Countdown, an initiative to accelerate solutions to the climate crisis and mobilize a movement for a net-zero future, and in 2023 TED launched TED Democracy to spark a new kind of conversation focused on realistic pathways towards a more vibrant and equitable future. View a full list of TED’s many programs and initiatives.</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="h-full">
-              <Image alt="tedimage" loading="lazy" width={700} height={1600} className="rounded-lg" src={ted1} />
-              <div>
-                <Image alt="tedimage" loading="lazy" width={700} height={400} className="rounded-lg mt-5" src={ted2} />
+            <div className="h-full flex flex-col gap-4">
+              <div className="relative flex-1 rounded-lg overflow-hidden min-h-[300px]">
+                <Image alt="tedimage" loading="lazy" fill className="object-cover" src={ted1} />
+              </div>
+              <div className="relative flex-1 rounded-lg overflow-hidden min-h-[300px]">
+                <Image alt="tedimage" loading="lazy" fill className="object-cover" src={ted2} />
               </div>
             </div>
           </div>
@@ -189,21 +188,32 @@ export default function Home() {
         </div>
         <div className="max-w-6xl mx-auto relative">
           <div className="mb-16">
-            <h1 className="text-3xl md:text-4xl font-bold text-black font-sans leading-tight">
-              Voices That <span className="text-[#EA0027]">Inspire</span> Us
+            <h1 className="text-3xl md:text-4xl font-bold text-black font-sans leading-tight uppercase">
+              Our Theme: <span className="text-[#EA0027]">Becoming</span>
             </h1>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div className="space-y-6 font-sans">
+            <div className="space-y-4 font-sans">
               <p className="text-gray-700 text-md leading-relaxed">
-                <span className="text-black">TEDx events are designed to serve as a platform for sharing &quot;ideas worth spreading,&quot; and this naturally includes using languages that resonate most with your audience. Organizers are encouraged to embrace linguistic diversity as it can reflect and celebrate the multicultural makeup of a community.</span>
+                Becoming is not about arriving at a destination; it is about embracing the continuous journey of growth, discovery, and transformation. It reflects the idea that every individual is constantly evolving—shaped by experiences, ideas, challenges, relationships, and the choices they make.
               </p>
-              <p className="text-black text-md leading-relaxed">
-                TEDx Chinmaya Vidyalaya Attukal Youth is designed for a diverse audience, including students, educators, professionals, and idea enthusiasts. Anyone eager to learn and engage in powerful discussions is welcome.
+              <p className="text-gray-700 text-md leading-relaxed">
+                In a world defined by rapid change, Becoming invites us to pause and reflect on who we are, who we aspire to be, and the impact we seek to create. It encourages us to view learning as a lifelong pursuit, resilience as a catalyst for growth, and curiosity as the foundation of innovation. Every setback becomes an opportunity to learn, every conversation a chance to broaden perspective, and every action a step toward meaningful change.
               </p>
-              <p className="text-black text-md leading-relaxed">
-                Applications for TEDx Chinmaya Vidyalaya Attukal Youth 2026 in November 2025. Stay updated by subscribing to our mailing list.
+              <p className="text-gray-700 text-md leading-relaxed">
+                At TEDx Chinmaya Vidyalaya Attukal Youth, Becoming celebrates the courage to question, the humility to learn, and the determination to grow. It recognises that transformation is both personal and collective. As individuals evolve, so do the communities they influence and the world they help shape.
               </p>
+              <p className="text-gray-700 text-md leading-relaxed">
+                Rooted in enduring values while embracing new ideas, this theme reflects the spirit of young minds who are prepared to think independently, lead responsibly, and contribute with purpose. It is a celebration of potential—not as something waiting to be discovered, but as something realised through continuous learning, thoughtful action, and meaningful collaboration.
+              </p>
+              <p className="text-gray-700 text-md leading-relaxed">
+                Through the stories shared, the conversations sparked, and the ideas exchanged on this stage, we invite every participant to reflect on their own journey of becoming. For it is through this ongoing process of growth that we unlock our greatest potential, inspire others, and create a future shaped by knowledge, compassion, creativity, and courage.
+              </p>
+              <div className="text-black font-semibold text-md leading-relaxed space-y-1 mt-4">
+                <p>Because becoming is not a moment. It is a mindset.</p>
+                <p>It is not about perfection. It is about progress.</p>
+                <p>It is not about who we are today, but who we choose to become tomorrow.</p>
+              </div>
             </div>
             <div className="relative h-full flex flex-col">
               <TestimonialCarousel />

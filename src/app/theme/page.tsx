@@ -1,41 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import { Globe, Sparkles, MessageCircle, Users } from 'lucide-react';
 import theme from '../../assets/theme.png';
 
 export default function ThemePage() {
-  const themeItems = [
-    {
-      icon: <Globe className="w-8 h-8 text-red-600" />,
-      title: 'The Power of Diverse Perspectives',
-      description: 'Every individual sees the world through a unique lens. By embracing diverse viewpoints, we uncover new insights, challenge assumptions, and expand our understanding of complex issues.',
-      bgClass: 'bg-white'
-    },
-    {
-      icon: <Sparkles className="w-8 h-8 text-red-600" />,
-      title: 'A Kaleidoscope of Ideas',
-      description: 'Just as a kaleidoscope creates ever-changing patterns from simple pieces, transformative ideas emerge when different experiences, disciplines, and perspectives come together.',
-      bgClass: 'bg-gray-100'
-    },
-    {
-      icon: <MessageCircle className="w-8 h-8 text-red-600" />,
-      title: 'Building Empathy Through Dialogue',
-      description: 'Meaningful conversations allow us to appreciate viewpoints beyond our own. Through dialogue and shared stories, we foster empathy, understanding, and stronger communities.',
-      bgClass: 'bg-white'
-    },
-    {
-      icon: <Users className="w-8 h-8 text-red-600" />,
-      title: 'Shaping Tomorrow Together',
-      description: 'The future is built through collaboration across cultures, generations, and fields of expertise. TEDx Chinmaya Vidyalaya Attukal Youth 2026 celebrates the collective wisdom that emerges when perspectives unite to inspire positive change.',
-      bgClass: 'bg-gray-100'
-    }
-  ];
-
   return (
     <div className="min-h-screen bg-[#F5F4F0]">
       {/* Top Section */}
-      <section className="flex flex-col md:flex-row mb-10">
-        <div className="relative w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-auto min-h-[300px] mb-6 md:mb-0 overflow-hidden">
+      <section className="flex flex-col md:flex-row mb-10 bg-white">
+        <div className="relative w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-auto min-h-[300px] overflow-hidden">
           {/* Using theme.png for the theme poster */}
           <Image
             src={theme}
@@ -45,20 +17,30 @@ export default function ThemePage() {
             priority
           />
         </div>
-        <div className="w-full md:w-1/2 mt-5 text-black">
-          {themeItems.map((item, index) => (
-            <div key={index} className={`p-6 sm:p-8 md:p-10 lg:p-14 flex items-start gap-4 ${item.bgClass} border-b border-gray-200`}>
-              <div className="flex-shrink-0 mt-1">
-                {item.icon}
-              </div>
-              <div className="flex-1 space-y-2">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-900">{item.title}</h3>
-                <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
+        <div className="w-full md:w-1/2 p-6 sm:p-8 md:p-10 lg:p-14 text-black flex flex-col justify-center border-l border-gray-100">
+          <div className="space-y-5 font-sans">
+            <h1 className="text-3xl md:text-4xl font-bold text-black mb-6 uppercase">Theme: <span className="text-red-600">Becoming</span></h1>
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+              Becoming is not about arriving at a destination; it is about embracing the continuous journey of growth, discovery, and transformation. It reflects the idea that every individual is constantly evolving—shaped by experiences, ideas, challenges, relationships, and the choices they make.
+            </p>
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+              In a world defined by rapid change, Becoming invites us to pause and reflect on who we are, who we aspire to be, and the impact we seek to create. It encourages us to view learning as a lifelong pursuit, resilience as a catalyst for growth, and curiosity as the foundation of innovation. Every setback becomes an opportunity to learn, every conversation a chance to broaden perspective, and every action a step toward meaningful change.
+            </p>
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+              At TEDx Chinmaya Vidyalaya Attukal Youth, Becoming celebrates the courage to question, the humility to learn, and the determination to grow. It recognises that transformation is both personal and collective. As individuals evolve, so do the communities they influence and the world they help shape.
+            </p>
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+              Rooted in enduring values while embracing new ideas, this theme reflects the spirit of young minds who are prepared to think independently, lead responsibly, and contribute with purpose. It is a celebration of potential—not as something waiting to be discovered, but as something realised through continuous learning, thoughtful action, and meaningful collaboration.
+            </p>
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+              Through the stories shared, the conversations sparked, and the ideas exchanged on this stage, we invite every participant to reflect on their own journey of becoming. For it is through this ongoing process of growth that we unlock our greatest potential, inspire others, and create a future shaped by knowledge, compassion, creativity, and courage.
+            </p>
+            <div className="text-black font-semibold text-sm md:text-base leading-relaxed space-y-1 mt-6 pt-6 border-t border-gray-100">
+              <p>Because becoming is not a moment. It is a mindset.</p>
+              <p>It is not about perfection. It is about progress.</p>
+              <p>It is not about who we are today, but who we choose to become tomorrow.</p>
             </div>
-          ))}
+          </div>
         </div>
       </section>
 

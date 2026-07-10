@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import fenil from '../../assets/fenil-shah.jpg';
@@ -9,26 +9,74 @@ import img2 from '../../assets/img2.jpg';
 const speakers = [
   {
     id: 1,
-    name: "Mr. Shabd Shaurya",
-    designation: "Youngest TEDx Speaker",
-    bio: "Shabd Shaurya is a 4-year-old Guinness World Record holder for being the youngest TEDx speaker in the world. He delivered his talk, “The Power of Stories for Children,” at TEDxVBIT at just 4 years and 31 days, earning widespread recognition for this milestone. He is also a published author of the book The Great Shabd Safari, available on Amazon and Flipkart. His journey has been featured in 25+ newspapers, including The Indian Express, Dainik...",
-    fullBio: "Shabd Shaurya is a 4-year-old Guinness World Record holder for being the youngest TEDx speaker in the world. He delivered his talk, “The Power of Stories for Children,” at TEDxVBIT at just 4 years and 31 days, earning widespread recognition for this milestone. He is also a published author of the book The Great Shabd Safari, available on Amazon and Flipkart. His journey has been featured in 25+ newspapers, including The Indian Express, Dainik Bhaskar, and more.",
+    name: "Sri R Suresh Mohan",
+    designation: "Speaker",
+    bio: "Details coming soon...",
+    fullBio: "Detailed biography coming soon...",
     image: img1,
   },
   {
     id: 2,
-    name: "Dr CA Achyut Dani",
-    designation: "Provost & Director General, JG University",
-    bio: "Dr. CA Achyut Dani is a distinguished entrepreneur, educator, and strategic management mentor with over 25 years of experience in advanced education. As the Director General & Provost (Vice Chancellor) of JG University and Chairman of Braincraft Eduserve and Vector Infrastructure, he has played a key role in shaping academic and entrepreneurial ecosystems. A practicing Chartered Accountant since 2003 with a PhD in Management and Commerce, Dr. ...",
-    fullBio: "Dr. CA Achyut Dani is a distinguished entrepreneur, educator, and strategic management mentor with over 25 years of experience in advanced education. As the Director General & Provost (Vice Chancellor) of JG University and Chairman of Braincraft Eduserve and Vector Infrastructure, he has played a key role in shaping academic and entrepreneurial ecosystems. A practicing Chartered Accountant since 2003 with a PhD in Management and Commerce, Dr. Dani brings unparalleled expertise to the table.",
+    name: "Abhilash Sudheesh",
+    designation: "Speaker",
+    bio: "Details coming soon...",
+    fullBio: "Detailed biography coming soon...",
     image: img2,
   },
   {
     id: 3,
-    name: "Mr. Falgun Rathod",
-    designation: "Founder & Managing Director of Cyber Octet Pvt. Ltd",
-    bio: "Falgun Rathod is a distinguished Cyber Security Expert, Ethical Hacker, Author, and Entrepreneur with over 17 years of experience in cybersecurity, cybercrime investigation, and digital risk management. As the Founder & Managing Director of Cyber Octet Pvt. Ltd., he has trained and mentored 65,000+ students, professionals, and industry participants through cybersecurity awareness programs and career-focused training across India and beyond. He...",
-    fullBio: "Falgun Rathod is a distinguished Cyber Security Expert, Ethical Hacker, Author, and Entrepreneur with over 17 years of experience in cybersecurity, cybercrime investigation, and digital risk management. As the Founder & Managing Director of Cyber Octet Pvt. Ltd., he has trained and mentored 65,000+ students, professionals, and industry participants through cybersecurity awareness programs and career-focused training across India and beyond. He continues to inspire the youth.",
+    name: "Nandhana Vinod",
+    designation: "Speaker",
+    bio: "Details coming soon...",
+    fullBio: "Detailed biography coming soon...",
+    image: fenil,
+  },
+  {
+    id: 4,
+    name: "Ishan Kiran Mithra",
+    designation: "Speaker",
+    bio: "Details coming soon...",
+    fullBio: "Detailed biography coming soon...",
+    image: img1,
+  },
+  {
+    id: 5,
+    name: "Aaryasree A A",
+    designation: "Speaker",
+    bio: "Details coming soon...",
+    fullBio: "Detailed biography coming soon...",
+    image: img2,
+  },
+  {
+    id: 6,
+    name: "Aarushi Pramod B",
+    designation: "Speaker",
+    bio: "Details coming soon...",
+    fullBio: "Detailed biography coming soon...",
+    image: fenil,
+  },
+  {
+    id: 7,
+    name: "Devangana A R",
+    designation: "Speaker",
+    bio: "Details coming soon...",
+    fullBio: "Detailed biography coming soon...",
+    image: img1,
+  },
+  {
+    id: 8,
+    name: "Adithyan J V",
+    designation: "Speaker",
+    bio: "Details coming soon...",
+    fullBio: "Detailed biography coming soon...",
+    image: img2,
+  },
+  {
+    id: 9,
+    name: "Jasmita Yasothamani Rukmoni",
+    designation: "Speaker",
+    bio: "Details coming soon...",
+    fullBio: "Detailed biography coming soon...",
     image: fenil,
   }
 ];
@@ -76,6 +124,39 @@ const SpeakerCard = ({ speaker }: { speaker: { id: number; name: string; designa
 };
 
 export default function SpeakersPage() {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const firstChild = scrollRef.current.firstElementChild as HTMLElement;
+      const scrollAmount = firstChild ? firstChild.offsetWidth : scrollRef.current.offsetWidth;
+      scrollRef.current.scrollBy({ left: direction === 'left' ? -scrollAmount : scrollAmount, behavior: 'smooth' });
+    }
+  };
+
+  const scrollToIdx = (idx: number) => {
+    if (scrollRef.current) {
+      const firstChild = scrollRef.current.firstElementChild as HTMLElement;
+      const scrollAmount = firstChild ? firstChild.offsetWidth : scrollRef.current.offsetWidth;
+      scrollRef.current.scrollTo({ left: scrollAmount * idx, behavior: 'smooth' });
+    }
+  };
+
+  const handleScroll = () => {
+    if (scrollRef.current) {
+      const scrollPosition = scrollRef.current.scrollLeft;
+      const firstChild = scrollRef.current.firstElementChild as HTMLElement;
+      const width = firstChild ? firstChild.offsetWidth : scrollRef.current.offsetWidth;
+      if (width > 0) {
+        const newIndex = Math.round(scrollPosition / width);
+        if (newIndex !== currentIndex) {
+          setCurrentIndex(newIndex);
+        }
+      }
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#F8F9FA] pb-24">
       {/* Hero Section */}
@@ -88,26 +169,54 @@ export default function SpeakersPage() {
 
       {/* Speakers Grid Area */}
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 -mt-10 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-16">
-          {speakers.map((speaker) => (
-            <SpeakerCard key={speaker.id} speaker={speaker} />
-          ))}
+
+        <div className="-mx-3 relative">
+          <div
+            ref={scrollRef}
+            onScroll={handleScroll}
+            className="flex overflow-x-auto snap-x snap-mandatory pt-16 pb-4 scroll-smooth"
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          >
+            {speakers.map((speaker) => (
+              <div key={speaker.id} className="snap-start flex-none w-full md:w-1/2 lg:w-1/3 px-3">
+                <SpeakerCard speaker={speaker} />
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Navigation Arrows (Absolute positioned outside the grid on desktop) */}
-        <div className="hidden lg:block absolute top-[55%] -left-4 -translate-y-1/2 cursor-pointer text-[#EB0028] hover:text-red-700 transition-colors">
+        <div
+          onClick={() => scroll('left')}
+          className="hidden lg:block absolute top-[55%] -left-4 -translate-y-1/2 cursor-pointer text-[#EB0028] hover:text-red-700 transition-colors"
+        >
           <ChevronLeft strokeWidth={1.5} className="w-12 h-12" />
         </div>
-        <div className="hidden lg:block absolute top-[55%] -right-4 -translate-y-1/2 cursor-pointer text-[#EB0028] hover:text-red-700 transition-colors">
+        <div
+          onClick={() => scroll('right')}
+          className="hidden lg:block absolute top-[55%] -right-4 -translate-y-1/2 cursor-pointer text-[#EB0028] hover:text-red-700 transition-colors"
+        >
           <ChevronRight strokeWidth={1.5} className="w-12 h-12" />
         </div>
 
         {/* Pagination Dots */}
         <div className="flex justify-center items-center mt-10 space-x-2">
-          <div className="w-2 h-2 rounded-full bg-[#EB0028]"></div>
-          <div className="w-2 h-2 rounded-full bg-gray-300 cursor-pointer hover:bg-gray-400 transition-colors"></div>
+          {speakers.map((_, idx) => (
+            <div
+              key={idx}
+              onClick={() => scrollToIdx(idx)}
+              className={`w-2 h-2 rounded-full cursor-pointer transition-colors ${idx === currentIndex ? 'bg-[#EB0028]' : 'bg-gray-300 hover:bg-gray-400'}`}
+            ></div>
+          ))}
         </div>
       </div>
+
+      <style dangerouslySetInnerHTML={{
+        __html: `
+        ::-webkit-scrollbar {
+            display: none;
+        }
+      `}} />
     </div>
   );
 }
