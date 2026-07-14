@@ -60,16 +60,15 @@ export default function Home() {
           <p className="text-lg text-gray-300 mb-8">
             Experience the spirit of TEDx Chinmaya Vidyalaya Attukal Youth through our latest highlight video.
           </p>
-          <div className="w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden border-4 border-red-600 shadow-lg">
-            <iframe
-              src="https://www.youtube.com/embed/3nWF4UE4RL4?si=VGh5DdTClTk13jqi"
+          <div className="w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden border-4 border-red-600 shadow-lg bg-gray-900">
+            <video
               className="w-full h-full"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen>
-            </iframe>
+              controls
+              playsInline
+            >
+              <source src="/vedios/TedX%20-2%20.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </section>
@@ -147,10 +146,10 @@ export default function Home() {
             </div>
             <div className="h-full flex flex-col gap-4">
               <div className="relative flex-1 rounded-lg overflow-hidden min-h-[300px]">
-                <Image alt="tedimage" loading="lazy" fill className="object-cover" src={ted1} />
+                <Image alt="TEDx Chinmaya Vidyalaya" loading="lazy" fill className="object-cover" src="/CHINMAYA%20VIDYALAYA%20ATTUKAL%20YOUTH.png" />
               </div>
               <div className="relative flex-1 rounded-lg overflow-hidden min-h-[300px]">
-                <Image alt="tedimage" loading="lazy" fill className="object-cover" src={ted2} />
+                <Image alt="TEDx Stage" loading="lazy" fill className="object-cover" src="/TedXCva.png" />
               </div>
             </div>
           </div>

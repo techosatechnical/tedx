@@ -11,10 +11,6 @@ export default function Navbar() {
   return (
     <header className="w-full">
       <div className="bg-[#EB0028] text-white text-sm flex justify-center items-center px-4 py-2">
-        <span>Speaker Applications are OPEN</span>
-        <Link href="/applicationstatus" className="ml-4 border border-white px-3 py-1 rounded hover:bg-white hover:text-red-700 transition">
-          Apply Now
-        </Link>
       </div>
       <nav className="bg-white px-6 py-4 shadow sticky top-0 z-50 w-full">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -35,7 +31,7 @@ export default function Navbar() {
             <Link href="/team" className="hover:text-red-400">Our Team</Link>
             <Link href="/pressrelease" className="hover:text-red-400">Press Release</Link>
             <Link href="/theme" className="hover:text-red-400">Theme</Link>
-            <Link href="/collaborators" className="hover:text-red-400">Collaborators</Link>
+            <Link href="/speakers" className="hover:text-red-400">Speakers</Link>
             <Link href="/gallery" className="hover:bg-white hover:text-red-500 rounded">Gallery</Link>
           </div>
         </div>
@@ -47,7 +43,7 @@ export default function Navbar() {
             <Link href="/team" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Our Team</Link>
             <Link href="/pressrelease" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Press Release</Link>
             <Link href="/theme" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Theme</Link>
-            <Link href="/collaborators" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Collaborators</Link>
+            <Link href="/speakers" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Speakers</Link>
             <Link href="/gallery" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link>
           </div>
         )}

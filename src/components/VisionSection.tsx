@@ -28,8 +28,9 @@ export default function VisionSection() {
         </p>
       </div>
 
-      <div className="flex justify-center items-center gap-6 flex-wrap">
+      <div className="flex flex-col justify-center items-center gap-4 flex-wrap mt-8">
         <Image alt="TEDx Logo" loading="lazy" width={350} height={150} src={logoBlack} />
+        <p className="text-sm font-semibold text-black">This Independent TEDx event is operated under liscence from TED</p>
       </div>
     </section>
   );
