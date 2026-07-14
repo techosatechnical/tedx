@@ -5,8 +5,7 @@ import TestimonialCarousel from '@/components/TestimonialCarousel';
 
 import ted1 from '../assets/ted.jpg';
 import ted2 from '../assets/ted2.jpg';
-import iso1 from '../assets/iso1.jpg';
-import iso2 from '../assets/iso2.png';
+
 
 export default function Home() {
   return (
