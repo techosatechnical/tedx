@@ -158,24 +158,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Youth Event Section */}
-      <section className="bg-white py-20 px-6 md:px-16">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <h1 className="text-3xl md:text-5xl text-black leading-tight">
-              What is a <span className="font-bold text-[#EA0027]">Youth</span> Event?
-            </h1>
-            <button className="mt-8 bg-[#EA0027] hover:bg-black hover:text-white text-white font-semibold py-3 px-6 rounded-md shadow transition">
-              Enroll Now
-            </button>
-          </div>
-          <div>
-            <p className="text-black text-lg leading-relaxed">
-              TEDx Youth events are independently organized TEDx events designed specifically for and by young people, giving them a platform to share ideas, inspire action, and spark meaningful conversations. These events provide a unique opportunity to showcase youth-driven innovation, creativity, and leadership. With a focus on empowering the next generation, TEDx Youth events feature inspiring talks from students, educators, and thought leaders, all aimed at shaping a better future. TEDx Chinmaya Vidyalaya Attukal Youth is part of this global initiative, aiming to amplify the voices of young changemakers and create a ripple effect of ideas worth spreading.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Voices That Inspire Us Section */}
       <div className="bg-[#F7F7F7] py-16 px-6 relative">
@@ -219,60 +201,8 @@ export default function Home() {
               <TestimonialCarousel />
             </div>
           </div>
-          <div className="mt-5">
-            <button className="bg-black text-white hover:bg-red-500 border px-8 py-3 font-sans rounded-full font-semibold transition-colors duration-200 flex items-center">
-              TALK TO AN EXPERT
-              <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
-              </svg>
-            </button>
-          </div>
         </div>
       </div>
-
-      {/* ISO Certifications Section */}
-      <section className="bg-gray-100 py-16 md:p-10 p-5">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold mb-5 text-black">
-            ISO <span className="text-[#EB0129]">Certifications</span>
-          </h2>
-          <div className="relative max-w-6xl mx-auto px-6 py-12 rounded-2xl hover:bg-[#F3F4F6] shadow-2xl overflow-hidden transition-all duration-500">
-            <div className="relative z-10">
-              <p className="text-black">
-                TEDx Chinmaya Vidyalaya Attukal Youth is officially certified under two globally recognized ISO standards. These certifications reflect our commitment to high-quality event management and sustainability in everything we do.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-center items-stretch gap-8 py-10 flex-wrap">
-          <div className="flex flex-col items-center max-w-sm w-full">
-            <div className="text-center bg-white p-6 rounded-xl shadow-lg w-full border border-gray-100 flex-1 flex flex-col">
-              <Image src={iso1} alt="ISO 20121:2024 Certification" width={300} height={300} className="rounded-lg  hover:scale-105 transition-transform duration-300 mb-6 object-contain" />
-              <h3 className="font-bold text-xl text-black mb-2">ISO 20121:2024</h3>
-              <p className="text-sm text-gray-600 mb-6 flex-1">Event Sustainability Management System</p>
-              <div className="text-sm text-gray-700 text-left space-y-2 bg-gray-50 p-4 rounded-lg border border-gray-200">
-                <p><strong className="text-black">Certificate No:</strong> ICI/1073892/25</p>
-                <p><strong className="text-black">Issued Date:</strong> 21st April 2025</p>
-                <p><strong className="text-black">Valid Until:</strong> 20th April 2028</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center max-w-sm w-full">
-
-            <div className="text-center bg-white p-6 rounded-xl shadow-lg w-full border border-gray-100 flex-1 flex flex-col">
-              <Image src={iso2} alt="ISO 9001:2015 Certification" width={300} height={300} className="rounded-lg  hover:scale-105 transition-transform duration-300 mb-6 object-contain" />
-              <h3 className="font-bold text-xl text-black mb-2">ISO 9001:2015</h3>
-              <p className="text-sm text-gray-600 mb-6 flex-1">Quality Management System</p>
-              <div className="text-sm text-gray-700 text-left space-y-2 bg-gray-50 p-4 rounded-lg border border-gray-200">
-                <p><strong className="text-black">Certificate No:</strong> QMS/230620/5564</p>
-                <p><strong className="text-black">Issued Date:</strong> 21st April 2025</p>
-                <p><strong className="text-black">Valid Until:</strong> 20th April 2028</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

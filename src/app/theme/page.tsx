@@ -4,9 +4,9 @@ import theme from '../../assets/theme.png';
 
 export default function ThemePage() {
   return (
-    <div className="min-h-screen bg-[#F5F4F0]">
+    <div className="bg-white min-h-screen">
       {/* Top Section */}
-      <section className="flex flex-col md:flex-row mb-10 bg-white">
+      <section className="flex flex-col md:flex-row bg-white min-h-screen">
         <div className="relative w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-auto min-h-[300px] overflow-hidden">
           {/* Using theme.png for the theme poster */}
           <Image
@@ -40,26 +40,6 @@ export default function ThemePage() {
               <p>It is not about perfection. It is about progress.</p>
               <p>It is not about who we are today, but who we choose to become tomorrow.</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Bottom Section */}
-      <section className="bg-white text-black py-12 sm:py-16 px-4 sm:px-6 md:px-12">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-          <div className="space-y-6">
-            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight">
-              Experience the Journey <span className="text-red-500">Visually</span> in Action
-            </h2>
-            <p className="text-gray-500 text-base sm:text-lg leading-relaxed">
-              Witness how TEDx Chinmaya Vidyalaya Attukal Youth 2026 brings <strong>&#x27;A Light Towards Wisdom&#x27;</strong> to life — a powerful glimpse into stories of innovation, growth, and the reimagination of education.
-            </p>
-          </div>
-          <div className="border-2 border-red-600 rounded-xl overflow-hidden shadow-lg">
-            <video controls className="w-full h-auto rounded-lg">
-              <source src="/Invite.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
           </div>
         </div>
       </section>
