@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaLinkedin as Linkedin, FaInstagram as Instagram, FaYoutube as Youtube } from 'react-icons/fa';
+import { FaInstagram as Instagram } from 'react-icons/fa';
 
 import logoWhite from '../assets/TEDx white.png';
 

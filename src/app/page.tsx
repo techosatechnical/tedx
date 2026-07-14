@@ -3,8 +3,7 @@ import HeroSection from '@/components/HeroSection';
 import VisionSection from '@/components/VisionSection';
 import TestimonialCarousel from '@/components/TestimonialCarousel';
 
-import ted1 from '../assets/ted.jpg';
-import ted2 from '../assets/ted2.jpg';
+
 
 
 export default function Home() {
