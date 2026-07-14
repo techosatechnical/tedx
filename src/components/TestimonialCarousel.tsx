@@ -7,31 +7,27 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import t1 from '../assets/testimonial1.png';
-import t2 from '../assets/testimonial2.jpg';
-import t3 from '../assets/testimonial3.png';
-
 const testimonials = [
   {
     title: "The Vision Behind Becoming",
-    quote: "It is with immense pride and a deep sense of responsibility that we present this edition of TEDxChinmayaVidyalayaAttukal Youth, centred on the theme \"Becoming.\" More than an event, TEDx is a platform where ideas inspire action, curiosity sparks dialogue, and young minds discover new possibilities.\n\nBecoming reflects the continuous journey of growth, learning, and transformation. It reminds us that every individual is shaped not only by achievements but also by the questions we ask, the values we uphold, and the choices we make. Through this platform, we seek to create meaningful conversations that encourage our youth to think critically, act courageously, and contribute purposefully to society.\n\nAt Chinmaya Vidyalaya Attukal, we believe that true education nurtures both intellectual excellence and strength of character. Rooted in enduring values while embracing contemporary thought, we aspire to cultivate leaders who are compassionate, innovative, and socially responsible.\n\nWe hope the ideas shared on this stage challenge assumptions, broaden perspectives, and inspire every participant to embrace their own journey of becoming.\n\nThank you for being part of this remarkable experience.",
-    name: "Fenil Pritesh Shah",
+    quote: "With 18 years of experience as an educator, he has been instrumental in nurturing young minds while actively leading and coordinating a wide range of programmes at the Vidyalaya level. Passionate about creating meaningful learning experiences beyond the classroom, he brings strong organizational skills, attention to detail, and a collaborative spirit to TEDxChinmayaVidyalayaAttukalYouth, ensuring a seamless and inspiring event for speakers, participants, and the audience.",
+    name: "Abilash",
     role: "Organizer",
-    image: t1
+    image: "/abilash organiser.jpeg"
   },
   {
     title: "Building a Platform for Meaningful Ideas",
-    quote: "TEDx Chinmaya Vidyalaya Attukal Youth is the result of collective vision, thoughtful collaboration, and a shared commitment to empowering young voices.\n\nOur theme, \"Becoming,\" celebrates the transformative process through which individuals grow into thoughtful leaders, responsible citizens, and lifelong learners. Every aspect of this event has been carefully designed to create an environment where diverse ideas can be explored, meaningful conversations can flourish, and innovation can meet purpose.\n\nThis journey has reaffirmed the power of collaboration and the importance of creating spaces where different perspectives are welcomed with openness and respect. We believe that the exchange of ideas has the potential not only to inspire individuals but also to strengthen communities and shape a better future.\n\nIt is our sincere hope that the conversations initiated today will continue well beyond this stage, encouraging each of us to reflect, learn, and contribute meaningfully to the world around us.\n\nThank you for joining us in celebrating the power of ideas worth spreading.",
-    name: "Bindu Raphael",
+    quote: "With 28 years of dedicated service in the Chinmaya Mission educational system, our Academic Coordinator brings a wealth of experience in academic leadership and institution building. Having served as the Principal of a Chinmaya ISC School, she has played a pivotal role in fostering academic excellence, value-based education, and holistic student development. She also served as the Convener of the ISC Board Examinations for five years, demonstrating exceptional organizational ability, leadership, and commitment to maintaining the highest standards of academic administration. As the Co-Organizer of TEDxChinmayaVidyalayaAttukalYouth, she guides the event with the same spirit of excellence and purpose, helping create a platform where meaningful ideas inspire young minds to think, grow, and become their best selves.",
+    name: "Shobana Rani",
     role: "Co organizer",
-    image: t2
+    image: "/coorganiser shobana rani.jpeg"
   },
   {
     title: "Education, Values, and the Journey of Becoming",
-    quote: "TEDx Chinmaya Vidyalaya Attukal Youth reflects our enduring commitment to providing an education that develops intellectual curiosity, ethical leadership, and a strong sense of purpose.\n\nThe theme \"Becoming\" captures the essence of lifelong learning and personal growth. It acknowledges that leadership is not defined by a destination but by a continuous commitment to self-discovery, resilience, and meaningful contribution.\n\nAt Chinmaya Vidyalaya Attukal, we strive to prepare young people to engage confidently with an ever-changing world while remaining firmly grounded in the timeless values of integrity, compassion, and service. We believe that when knowledge is guided by character, education becomes a powerful force for positive change.\n\nMay this gathering inspire thoughtful dialogue, encourage bold ideas, and reaffirm our collective responsibility to shape a future defined by wisdom, empathy, and innovation.\n\nI extend my sincere appreciation to our speakers, partners, volunteers, and every participant for making this event possible. Together, let us celebrate the transformative power of ideas and the limitless potential of our youth.",
-    name: "Ms. Archana Damani",
+    quote: "With over 20 years of experience in education, she brings a strong foundation in academic leadership, institutional development, and values-based education. After serving as Vice Principal for seven years, he now leads as Principal, guiding students and educators with a vision that blends excellence, innovation, and character. As the Executive Producer of TEDxChinmayaVidyalayaAttukalYouth, he provides the strategic direction and leadership behind the event, ensuring every aspect reflects the TEDx spirit of ideas worth spreading while staying rooted in the timeless values of Chinmaya Mission. His commitment is to create a platform where young voices are empowered, meaningful conversations flourish, and ideas inspire lasting impact.",
+    name: "Principal",
     role: "Executive Producer",
-    image: t3
+    image: "/indu vikraman executive producer.jpeg"
   }
 ];
 
