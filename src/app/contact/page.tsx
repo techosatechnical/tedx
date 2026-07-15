@@ -1,6 +1,6 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
-import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { Mail, MapPin, Clock } from 'lucide-react';
+import { FaInstagram } from 'react-icons/fa';
 import Link from 'next/link';
 
 export default function ContactPage() {

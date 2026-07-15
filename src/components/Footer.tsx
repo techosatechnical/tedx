@@ -23,7 +23,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4">Our community</h4>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li><Link href="/teamphotos">TEDx Chinmaya Vidyalaya Attukal 2026</Link></li>
+            <li><Link href="">TEDx Chinmaya Vidyalaya Attukal 2026</Link></li>
             <li><Link href="/team">Our Team</Link></li>
             <li><Link href="/speakers">Speakers</Link></li>
             <li><Link href="/contact">Contact</Link></li>
