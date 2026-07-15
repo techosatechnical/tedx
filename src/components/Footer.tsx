@@ -11,12 +11,11 @@ export default function Footer() {
         <div>
           <div className="flex flex-col items-start">
             <Image alt="Logo" loading="lazy" width={240} height={64} className="h-full w-48 md:w-60 object-contain" src={logoWhite} />
-            <p className="text-xs text-red-500 mt-2 max-w-xs">This Independent TEDx event is operated under liscence from TED</p>
+            <p className="text-xs text-red-500 mt-2 max-w-xs">This Independent TEDx event is operated under license  from TED</p>
           </div>
           <h4 className="font-semibold mb-4 mt-4">Explore</h4>
           <ul className="space-y-2 text-sm text-gray-300">
             <li><Link href="/">Home</Link></li>
-            <li><Link href="/pressrelease">Press Release</Link></li>
             <li><Link href="/theme">Theme</Link></li>
           </ul>
         </div>
@@ -42,7 +41,7 @@ export default function Footer() {
             <a href="https://www.instagram.com/tedx_cva_youth/" target="_blank" rel="noopener noreferrer">
               <Instagram className="w-6 h-6 hover:text-gray-400 cursor-pointer" />
             </a>
-            <a href="https://tedxthaltejyouth.in/" target="_blank" rel="noopener noreferrer" className="ml-4 flex items-center">
+            <a href="https://www.ted.com/tedx/events/69493" target="_blank" rel="noopener noreferrer" className="ml-4 flex items-center">
               <Image src="/TedXCva.png" alt="TEDx Thaltej Youth" width={100} height={30} className="h-6 w-auto object-contain hover:opacity-80 transition-opacity" />
             </a>
 
@@ -55,7 +54,7 @@ export default function Footer() {
         © TEDx Chinmaya Vidyalaya Attukal Youth 2026 | Licensed by TED | All Rights Reserved
       </p>
       <p className="text-center md:text-sm text-xs text-white mt-6">
-        Developed by Techosa - Copyright © Techosa Publications
+        Developed by Techosa - Copyright © Techosa
       </p>
     </footer>
   );

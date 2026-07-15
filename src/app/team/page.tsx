@@ -14,7 +14,7 @@ export default function TeamPage() {
           Meet Our Team
         </h1>
         <div className="w-16 h-[2px] bg-white mb-6"></div>
-        <p className="text-lg tracking-widest font-medium">2025</p>
+        <p className="text-lg tracking-widest font-medium">2026</p>
       </div>
 
       <div className="max-w-6xl mx-auto px-6 mt-20 flex justify-center">

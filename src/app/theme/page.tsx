@@ -1,16 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import theme from '../../assets/theme.png';
 
 export default function ThemePage() {
   return (
     <div className="bg-white min-h-screen">
-      {/* Top Section */}
       <section className="flex flex-col md:flex-row bg-white min-h-screen">
         <div className="relative w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-auto min-h-[300px] overflow-hidden">
-          {/* Using theme.png for the theme poster */}
           <Image
-            src={theme}
+            src="/becoming.jpeg"
             alt="Theme Poster"
             fill
             className="object-cover"

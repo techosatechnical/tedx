@@ -137,37 +137,39 @@ const SpeakerCard = ({ speaker }: { speaker: { id: number; name: string; designa
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="bg-white rounded-xl p-8 shadow-sm flex flex-col h-full relative">
-      <div className="text-[#EB0028] mb-6">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="opacity-90">
-          <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" />
-          <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
-        </svg>
+    <div className="bg-white rounded-2xl shadow-md flex flex-col h-full overflow-hidden border border-gray-100 hover:-translate-y-1 transition-transform duration-300">
+      {/* Full-bleed portrait image */}
+      <div className="relative w-full h-72 flex-shrink-0">
+        <Image
+          src={speaker.image}
+          alt={speaker.name}
+          fill
+          className="object-cover object-top"
+        />
+        {/* Red accent bar at bottom of image */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#EB0028]" />
       </div>
-      <div className="flex-grow mb-8">
-        <p className="text-gray-600 leading-[1.7] text-sm md:text-base">
+
+      {/* Name & role */}
+      <div className="px-5 pt-4 pb-3">
+        <h3 className="text-base font-bold text-gray-900 leading-tight">{speaker.name}</h3>
+        <p className="text-xs text-[#EB0028] font-semibold uppercase tracking-wide mt-1">{speaker.designation}</p>
+      </div>
+
+      {/* Divider */}
+      <div className="mx-5 border-t border-gray-100" />
+
+      {/* Bio */}
+      <div className="px-5 py-4 flex flex-col flex-grow">
+        <p className="text-gray-600 leading-relaxed text-sm flex-grow">
           {expanded ? speaker.fullBio : speaker.bio}
         </p>
         <button
           onClick={() => setExpanded(!expanded)}
-          className="text-[#EB0028] font-semibold mt-3 text-sm flex items-center hover:text-red-800 transition-colors"
+          className="text-[#EB0028] font-semibold mt-3 text-sm hover:text-red-800 transition-colors self-start"
         >
           {expanded ? "Read Less ↑" : "Read More ↓"}
         </button>
-      </div>
-      <div className="flex items-center mt-auto border-t border-gray-100 pt-6">
-        <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0 relative">
-          <Image
-            src={speaker.image}
-            alt={speaker.name}
-            fill
-            className="object-cover"
-          />
-        </div>
-        <div className="ml-4">
-          <h3 className="text-[15px] font-bold text-gray-900">{speaker.name}</h3>
-          <p className="text-xs text-gray-500 mt-1">{speaker.designation}</p>
-        </div>
       </div>
     </div>
   );
@@ -209,12 +211,9 @@ export default function SpeakersPage() {
 
   return (
     <div className="min-h-screen bg-[#F8F9FA] pb-24">
-      {/* Hero Section */}
+
       <div className="bg-[#EB0028] text-white py-28 px-4 text-center">
         <h1 className="text-5xl md:text-6xl font-bold mb-4">Voices of Becoming</h1>
-        <p className="text-xl md:text-2xl font-light opacity-95">
-          Discover the brilliant minds behind the movement.
-        </p>
       </div>
 
       {/* Guiding Voices Section */}

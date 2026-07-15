@@ -4,19 +4,19 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const galleryImages = [
-  "/gallery/1780830563737-54591417325_d91e773417_b.jpg",
-  "/gallery/1753877652319-54591334058_58deb9a56b_c.jpg",
-  "/gallery/1753877629542-54591324203_0d4d3eaf9a_c.jpg",
-  "/gallery/1753877615769-54591320923_d9b7fb9cb7_c.jpg",
-  "/gallery/1753877600888-54591103251_31c24551cc_c.jpg",
-  "/gallery/1753877583759-54591313008_9395442186_c.jpg",
-  "/gallery/1753877566751-54591295034_4573ee0e56_c.jpg",
-  "/gallery/1753877538865-54591101656_d1c7985f64_c.jpg",
-  "/gallery/1753877522550-54590222992_a9e8081b3c_c.jpg",
+  "/gallery/",
+  "/gallery/",
+  "/gallery/",
+  "/gallery/",
+  "/gallery/",
+  "/gallery/",
+  "/gallery/",
+  "/gallery/",
+  "/gallery/",
 ];
 
 export default function GalleryPage() {
-  const textToType = "Welcome to Our Photo Gallery";
+  const textToType = "Moments of Becoming ";
   const [typedText, setTypedText] = useState("");
 
   useEffect(() => {
@@ -66,7 +66,7 @@ export default function GalleryPage() {
             {typedText}<span className="animate-pulse">|</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
-            Discover highlights from our events, moments, and memories.
+            Relive the conversations, connections, and inspiring moments that made TEDxChinmayaVidyalayaAttukalYouth unforgettable.
           </p>
         </div>
       </section>
@@ -74,10 +74,6 @@ export default function GalleryPage() {
       {/* Gallery Section */}
       <section className="flex-1 w-full py-16 px-6 md:px-12 relative z-20">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-[#1f2937]">Our Gallery</h2>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {galleryImages.map((src, idx) => (
               <div

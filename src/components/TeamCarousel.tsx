@@ -9,23 +9,23 @@ import 'swiper/css/pagination';
 
 const testimonials = [
   {
-    title: "The Vision Behind Becoming",
-    quote: "With 18 years of experience as an educator, he has been instrumental in nurturing young minds while actively leading and coordinating a wide range of programmes at the Vidyalaya level. Passionate about creating meaningful learning experiences beyond the classroom, he brings strong organizational skills, attention to detail, and a collaborative spirit to TEDxChinmayaVidyalayaAttukalYouth, ensuring a seamless and inspiring event for speakers, participants, and the audience.",
-    name: "Abilash",
+    title: "",
+    quote: `With 18 years of experience as an educator, he has been instrumental in nurturing young minds while actively leading and coordinating a wide range of programmes at the Vidyalaya level. Passionate about creating meaningful learning experiences beyond the classroom, he brings strong organizational skills, attention to detail, and a collaborative spirit to TEDxChinmayaVidyalayaAttukalYouth, ensuring a seamless and inspiring event for speakers, participants, and the audience.`,
+    name: "Abhilash GS",
     role: "Organizer",
     image: "/abilash organiser.jpeg"
   },
   {
-    title: "Building a Platform for Meaningful Ideas",
-    quote: "With 28 years of dedicated service in the Chinmaya Mission educational system, our Academic Coordinator brings a wealth of experience in academic leadership and institution building. Having served as the Principal of a Chinmaya ISC School, she has played a pivotal role in fostering academic excellence, value-based education, and holistic student development. She also served as the Convener of the ISC Board Examinations for five years, demonstrating exceptional organizational ability, leadership, and commitment to maintaining the highest standards of academic administration. As the Co-Organizer of TEDxChinmayaVidyalayaAttukalYouth, she guides the event with the same spirit of excellence and purpose, helping create a platform where meaningful ideas inspire young minds to think, grow, and become their best selves.",
-    name: "Shobana Rani",
+    title: "",
+    quote: "With 28 years of dedicated service in the Chinmaya Mission educational system, our Academic Coordinator brings a wealth of experience in academic leadership and institution building. Having served as the Principal of a Chinmaya ISC School, she has played a pivotal role in fostering academic excellence, value-based education, and holistic student development.She also served as the Convener of the ISC Board Examinations for five years, demonstrating exceptional organizational ability, leadership, and commitment to maintaining the highest standards of academic administration.As the Co-Organizer of TEDxChinmayaVidyalayaAttukalYouth, she guides the event with the same spirit of excellence and purpose, helping create a platform where meaningful ideas inspire young minds to think, grow, and become their best selves.",
+    name: "Smt. Shobha Rani S",
     role: "Co organizer",
     image: "/coorganiser shobana rani.jpeg"
   },
   {
-    title: "Education, Values, and the Journey of Becoming",
-    quote: "With over 20 years of experience in education, she brings a strong foundation in academic leadership, institutional development, and values-based education. After serving as Vice Principal for seven years, he now leads as Principal, guiding students and educators with a vision that blends excellence, innovation, and character. As the Executive Producer of TEDxChinmayaVidyalayaAttukalYouth, he provides the strategic direction and leadership behind the event, ensuring every aspect reflects the TEDx spirit of ideas worth spreading while staying rooted in the timeless values of Chinmaya Mission. His commitment is to create a platform where young voices are empowered, meaningful conversations flourish, and ideas inspire lasting impact.",
-    name: "Indu Vikraman",
+    title: "",
+    quote: "With over 20 years of experience in education, she brings a strong foundation in academic leadership, institutional development, and values-based education. After serving as Vice Principal for seven years, she now leads as Principal, guiding students and educators with a vision that blends excellence, innovation, and character. As the Executive Producer of TEDxChinmayaVidyalayaAttukalYouth, she provides the strategic direction and leadership behind the event, ensuring every aspect reflects the TEDx spirit of ideas worth spreading while staying rooted in the timeless values of Chinmaya Mission. Her commitment is to create a platform where young voices are empowered, meaningful conversations flourish, and ideas inspire lasting impact. ",
+    name: "Smt. Indu Vikraman J",
     role: "Executive Producer",
     image: "/indu vikraman executive producer.jpeg"
   }
@@ -52,12 +52,12 @@ export default function TeamCarousel() {
 
               {/* Photo at the top */}
               <div className="mb-6 flex flex-col items-center border-b border-gray-100 pb-6 w-full">
-                <div className="relative w-24 h-24 sm:w-32 sm:h-32 mb-4">
+                <div className="relative w-24 h-24 sm:w-32 sm:h-32 mb-4 rounded-full overflow-hidden bg-white border border-gray-100 shadow-sm">
                   <Image
                     src={t.image}
                     alt={t.name}
                     fill
-                    className="rounded-full object-cover shadow-sm"
+                    className="object-contain"
                   />
                 </div>
                 <h4 className="text-black font-bold text-xl">{t.name}</h4>

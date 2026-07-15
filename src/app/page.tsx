@@ -54,10 +54,10 @@ export default function Home() {
       <section className="bg-black py-16 px-4 md:px-20 text-white">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Watch Our <span className="text-[#EB0129]">Vision</span> in Action
+            The <span className="text-[#EB0129]">Becoming </span> Journey
           </h2>
           <p className="text-lg text-gray-300 mb-8">
-            Experience the spirit of TEDx Chinmaya Vidyalaya Attukal Youth through our latest highlight video.
+            Discover the moments that shaped an unforgettable TEDxChinmayaVidyalayaAttukalYouth experience.
           </p>
           <div className="w-full max-w-4xl mx-auto aspect-video rounded-2xl overflow-hidden border-4 border-red-600 shadow-lg bg-gray-900">
             <video

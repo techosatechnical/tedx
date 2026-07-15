@@ -3,33 +3,6 @@ export const metadata = {
   description: 'Stay up to date with the latest announcements and stories from TEDx Chinmaya Vidyalaya Attukal Youth.',
 };
 
-const pressReleases = [
-  {
-    _id: "6889f0a95ba857f1dd0589b0",
-    title: "FOR IMMEDIATE RELEASE",
-    pdfUrl: "/uploads/1753870504999-Press Release 2.pdf",
-    date: "21 january 2025"
-  },
-  {
-    _id: "6889f05b5ba857f1dd0589ad",
-    title: "FOR IMMEDIATE RELEASE",
-    pdfUrl: "/uploads/1753870427083-Press Release.pdf",
-    date: "16 november 2024"
-  },
-  {
-    _id: "6889eff45ba857f1dd0589aa",
-    title: "FOR IMMEDIATE RELEASE",
-    pdfUrl: "/uploads/1753870324739-1may.pdf",
-    date: "1 may 2025"
-  },
-  {
-    _id: "6889ef9a5ba857f1dd0589a7",
-    title: "PUBLIC NOTICE – VENUE CHANGE",
-    pdfUrl: "/uploads/1753870234474-pressrelease1.pdf",
-    date: "11 june 2025"
-  }
-];
-
 export default function PressReleasePage() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -41,33 +14,18 @@ export default function PressReleasePage() {
         </div>
       </section>
 
-      {/* Grid Section */}
-      <section className="bg-gray-200 py-16 px-6 md:px-12 flex-1">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {pressReleases.map((pr) => (
-              <div 
-                key={pr._id} 
-                className="bg-[#f5f5f5] rounded-xl p-8 shadow-sm border border-gray-100 flex flex-col transition-transform hover:-translate-y-1 hover:shadow-md"
-              >
-                <p className="text-xs text-gray-500 font-bold tracking-widest uppercase mb-3">TEDx Chinmaya Vidyalaya Attukal</p>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 leading-tight">{pr.title}</h3>
-                <p className="text-sm text-gray-500 mb-8 capitalize">{pr.date}</p>
-                
-                <div className="mt-auto">
-                  <a 
-                    href={pr.pdfUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-[#EA0028] font-bold text-sm inline-flex items-center group"
-                  >
-                    View PDF 
-                    <span className="ml-2 transform transition-transform group-hover:translate-x-1">→</span>
-                  </a>
-                </div>
-              </div>
-            ))}
+      {/* Empty State Section */}
+      <section className="bg-gray-100 py-24 px-6 md:px-12 flex-1 flex items-center justify-center">
+        <div className="text-center max-w-md">
+          <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-[#EA0028]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+            </svg>
           </div>
+          <h2 className="text-2xl font-bold text-gray-800 mb-3">No Press Releases Yet</h2>
+          <p className="text-gray-500 text-base leading-relaxed">
+            Press releases will be published here as they become available. Check back soon for the latest announcements from TEDx Chinmaya Vidyalaya Attukal Youth.
+          </p>
         </div>
       </section>
     </div>
