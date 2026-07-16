@@ -43,6 +43,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <link
+          rel="preload"
+          href="/vedios/becoming.mp4"
+          as="video"
+          type="video/mp4"
+        />
+      </head>
       <body className={`${inter.className} bg-black text-white antialiased flex flex-col min-h-screen`}>
         <Navbar />
         <main className="flex-grow">
