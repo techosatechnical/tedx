@@ -13,6 +13,27 @@ export const metadata: Metadata = {
   icons: {
     icon: "/TedXCva.png",
   },
+  openGraph: {
+    title: "TEDx Chinmaya Vidyalaya Attukal Youth",
+    description: "Independent TEDx event operated under license from TED.",
+    url: "https://www.tedxchinmayavidyalayaattukalyouth.com",
+    siteName: "TEDx Chinmaya Vidyalaya Attukal Youth",
+    images: [
+      {
+        url: "https://www.tedxchinmayavidyalayaattukalyouth.com/TedXCva.png",
+        width: 1200,
+        height: 630,
+        alt: "TEDx Chinmaya Vidyalaya Attukal Youth",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TEDx Chinmaya Vidyalaya Attukal Youth",
+    description: "Independent TEDx event operated under license from TED.",
+    images: ["https://www.tedxchinmayavidyalayaattukalyouth.com/TedXCva.png"],
+  },
 };
 
 export default function RootLayout({
