@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "TEDx Chinmaya Vidyalaya Attukal Youth",
   description: "Independent TEDx event operated under license from TED.",
+  icons: {
+    icon: "/TedXCva.png",
+  },
 };
 
 export default function RootLayout({
