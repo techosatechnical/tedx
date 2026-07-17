@@ -93,7 +93,7 @@ const GuidingVoiceCard = ({ speaker }: { speaker: typeof guidingVoices[0] }) => 
 
   return (
     <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row hover:-translate-y-1 transition-transform duration-300">
-      <div className="relative w-full md:w-56 flex-shrink-0 min-h-[220px] md:min-h-0">
+      <div className="relative w-full md:w-56 flex-shrink-0 min-h-[200px] sm:min-h-[220px] md:min-h-0">
         <Image
           src={speaker.image}
           alt={speaker.name}
@@ -212,8 +212,8 @@ export default function SpeakersPage() {
   return (
     <div className="min-h-screen bg-[#F8F9FA] pb-24">
 
-      <div className="bg-[#EB0028] text-white py-28 px-4 text-center">
-        <h1 className="text-5xl md:text-6xl font-bold mb-4">Voices of Becoming</h1>
+      <div className="bg-[#EB0028] text-white py-16 sm:py-20 md:py-28 px-4 text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Voices of Becoming</h1>
       </div>
 
       {/* Guiding Voices Section */}

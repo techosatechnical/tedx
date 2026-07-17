@@ -38,7 +38,7 @@ Thank you for being part of this remarkable experience.`,
 
 export default function TestimonialCarousel() {
   return (
-    <div className="bg-white rounded-2xl shadow-lg p-8 w-full max-w-2xl mx-auto h-full">
+    <div className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 w-full max-w-2xl mx-auto h-full">
       <Swiper
         modules={[Autoplay, Pagination]}
         spaceBetween={30}

@@ -44,6 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="preload"
           href="/vedios/becoming.mp4"
@@ -51,7 +52,7 @@ export default function RootLayout({
           type="video/mp4"
         />
       </head>
-      <body className={`${inter.className} bg-black text-white antialiased flex flex-col min-h-screen`}>
+      <body className={`${inter.className} bg-black text-white antialiased flex flex-col min-h-screen overflow-x-hidden`}>
         <Navbar />
         <main className="flex-grow">
           {children}

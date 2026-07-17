@@ -9,8 +9,8 @@ export default function TeamPage() {
   return (
     <div className="min-h-screen bg-white pb-20">
       {/* Header Block */}
-      <div className="w-full bg-[#EA0028] text-white pt-40 pb-20 flex flex-col items-center justify-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 font-sans tracking-wide">
+      <div className="w-full bg-[#EA0028] text-white pt-20 sm:pt-28 md:pt-40 pb-12 sm:pb-16 md:pb-20 flex flex-col items-center justify-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 font-sans tracking-wide">
           Meet Our Team
         </h1>
         <div className="w-16 h-[2px] bg-white mb-6"></div>

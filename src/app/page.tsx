@@ -19,7 +19,7 @@ export default function Home() {
             <h1 className="md:text-5xl text-3xl font-bold text-gray-900 mb-4">
               <span className="text-[#EA0028]">Mission</span>
             </h1>
-            <p className="text-xl text-black">Shaping Tomorrow Through Ideas That Matter</p>
+            <p className="text-base sm:text-lg md:text-xl text-black">Shaping Tomorrow Through Ideas That Matter</p>
           </div>
           <div className="grid gap-8 grid-cols-1 md:grid-cols-3">
             {[
@@ -41,7 +41,7 @@ export default function Home() {
                   <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center mb-4">
                     <span className="text-[#EB0028] font-bold text-xl">{i + 1}</span>
                   </div>
-                  <h3 className="text-2xl font-bold text-gray-900">{mission.title}</h3>
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900">{mission.title}</h3>
                 </div>
                 <p className="text-gray-700 leading-relaxed">{mission.description}</p>
               </div>
@@ -144,10 +144,10 @@ export default function Home() {
               </div>
             </div>
             <div className="h-full flex flex-col gap-4">
-              <div className="relative flex-1 rounded-lg overflow-hidden min-h-[300px]">
+              <div className="relative flex-1 rounded-lg overflow-hidden min-h-[200px] sm:min-h-[250px] md:min-h-[300px]">
                 <Image alt="TEDx Chinmaya Vidyalaya" loading="lazy" fill className="object-cover" src="/CHINMAYA%20VIDYALAYA%20ATTUKAL%20YOUTH.png" />
               </div>
-              <div className="relative flex-1 rounded-lg overflow-hidden min-h-[300px]">
+              <div className="relative flex-1 rounded-lg overflow-hidden min-h-[200px] sm:min-h-[250px] md:min-h-[300px]">
                 <Image alt="TEDx Stage" loading="lazy" fill className="object-cover" src="/TedXCva.png" />
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function Home() {
               Our Theme: <span className="text-[#EA0027]">Becoming</span>
             </h1>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-start">
             <div className="space-y-4 font-sans">
               <p className="text-gray-700 text-md leading-relaxed">
                 Becoming is not about arriving at a destination; it is about embracing the continuous journey of growth, discovery, and transformation. It reflects the idea that every individual is constantly evolving—shaped by experiences, ideas, challenges, relationships, and the choices they make.
@@ -194,7 +194,7 @@ export default function Home() {
                 <p>It is not about who we are today, but who we choose to become tomorrow.</p>
               </div>
             </div>
-            <div className="relative h-full flex flex-col">
+            <div className="relative h-full flex flex-col mt-8 lg:mt-0">
               <TestimonialCarousel />
             </div>
           </div>

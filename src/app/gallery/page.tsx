@@ -32,6 +32,11 @@ const galleryItems: MediaItem[] = [
     src: '/gallery/WhatsApp Video 2026-07-16 at 2.17.07 PM.mp4',
     label: 'TEDx Moment 4',
   },
+  {
+    type: 'video',
+    src: '/gallery/WhatsApp Video 2026-07-17 at 2.11.08 PM.mp4',
+    label: 'TEDx Moment 5',
+  },
 ];
 
 function VideoCard({ item, onClick }: { item: MediaItem; onClick: () => void }) {
@@ -200,10 +205,10 @@ export default function GalleryPage() {
           <path d="M1440 50V500H200C600 480 1000 380 1440 50Z" fill="#B3001E" />
         </svg>
         <div className="relative z-10 text-center px-4 pt-10">
-          <h1 className="text-5xl md:text-6xl font-bold text-black mb-4 font-sans h-[72px]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 font-sans h-[60px] sm:h-[72px]">
             {typedText}<span className="animate-pulse">|</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-700">
+          <p className="text-base sm:text-lg md:text-xl text-gray-700 px-4">
             Relive the conversations, connections, and inspiring moments that made TEDxChinmayaVidyalayaAttukalYouth unforgettable.
           </p>
         </div>
@@ -220,7 +225,7 @@ export default function GalleryPage() {
                 <div className="w-1 h-8 bg-[#EA0028] rounded-full" />
                 <h2 className="text-2xl font-bold text-gray-800">Videos</h2>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-14">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 mb-14">
                 {galleryItems.filter(i => i.type === 'video').map((item, idx) => (
                   <VideoCard key={idx} item={item} onClick={() => setSelectedItem(item)} />
                 ))}
