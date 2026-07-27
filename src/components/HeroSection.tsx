@@ -12,7 +12,7 @@ export default function HeroSection() {
         poster="/becoming.jpeg"
         className="absolute top-0 left-0 w-full h-full object-cover"
       >
-        <source src="/vedios/becoming.mp4" type="video/mp4" />
+        <source src="/vedios/venue.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </section>

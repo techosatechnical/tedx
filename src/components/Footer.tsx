@@ -26,6 +26,7 @@ export default function Footer() {
             <li><Link href="">TEDx Chinmaya Vidyalaya Attukal 2026</Link></li>
             <li><Link href="/team">Our Team</Link></li>
             <li><Link href="/speakers">Speakers</Link></li>
+            <li><Link href="/performers">Performers</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>
         </div>

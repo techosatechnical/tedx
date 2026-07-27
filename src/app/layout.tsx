@@ -47,7 +47,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           rel="preload"
-          href="/vedios/becoming.mp4"
+          href="/vedios/venue.mp4"
           as="video"
           type="video/mp4"
         />

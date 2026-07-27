@@ -32,6 +32,7 @@ export default function Navbar() {
             <Link href="/pressrelease" className="hover:text-red-400">Press Release</Link>
             <Link href="/theme" className="hover:text-red-400">Theme</Link>
             <Link href="/speakers" className="hover:text-red-400">Speakers</Link>
+            <Link href="/performers" className="hover:text-red-400">Performers</Link>
             <Link href="/gallery" className="hover:bg-white hover:text-red-500 rounded">Gallery</Link>
           </div>
         </div>
@@ -44,6 +45,7 @@ export default function Navbar() {
             <Link href="/pressrelease" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Press Release</Link>
             <Link href="/theme" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Theme</Link>
             <Link href="/speakers" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Speakers</Link>
+            <Link href="/performers" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Performers</Link>
             <Link href="/gallery" className="block py-3 border-b text-gray-800 hover:text-red-500" onClick={() => setIsMobileMenuOpen(false)}>Gallery</Link>
           </div>
         )}

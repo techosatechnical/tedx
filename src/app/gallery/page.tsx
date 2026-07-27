@@ -52,6 +52,11 @@ const galleryItems: MediaItem[] = [
     src: '/gallery/WhatsApp Video 2026-07-21 at 11.16.29 AM (1).mp4',
     label: 'TEDx Moment 6',
   },
+  {
+    type: 'video',
+    src: '/gallery/WhatsApp Video 2026-07-27 at 4.42.56 PM.mp4',
+    label: 'TEDx Moment 6',
+  },
 ];
 
 function VideoCard({ item, onClick }: { item: MediaItem; onClick: () => void }) {
