@@ -26,9 +26,9 @@ His musical journey began under the guidance of his first teacher, Sunbright of 
 export default function PerformersPage() {
   return (
     <main className="min-h-screen bg-white">
-      <section className="pt-32 pb-20 bg-gray-50 border-b">
+      <section className="pt-32 pb-20 bg-red-600 border-b">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 tracking-tight">Rhythms of Becoming</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white tracking-tight">Rhythms of Becoming</h1>
         </div>
       </section>
 
