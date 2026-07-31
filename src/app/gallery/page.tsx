@@ -45,17 +45,52 @@ const galleryItems: MediaItem[] = [
   {
     type: 'video',
     src: '/gallery/WhatsApp Video 2026-07-21 at 11.16.29 AM.mp4',
-    label: 'TEDx Moment 6',
+    label: 'TEDx Moment 7',
   },
   {
     type: 'video',
     src: '/gallery/WhatsApp Video 2026-07-21 at 11.16.29 AM (1).mp4',
-    label: 'TEDx Moment 6',
+    label: 'TEDx Moment 8',
   },
   {
     type: 'video',
     src: '/gallery/WhatsApp Video 2026-07-27 at 4.42.56 PM.mp4',
-    label: 'TEDx Moment 6',
+    label: 'TEDx Moment 9',
+  },
+  {
+    type: 'video',
+    src: '/gallery/CVA ARYASREE TED X RL HQ.mp4',
+    label: 'TEDx Moment 10',
+  },
+  {
+    type: 'video',
+    src: '/gallery/CVA JASMITHA TED X RL HQ.mp4',
+    label: 'TEDx Moment 11',
+  },
+  {
+    type: 'video',
+    src: '/gallery/CVK ISHAAN TEDX HQ.mp4',
+    label: 'TEDx Moment 12',
+  },
+  {
+    type: 'video',
+    src: '/gallery/CVKAT DEVANGANA TEDX CUTOUT HQ.mp4',
+    label: 'TEDx Moment 13',
+  },
+  {
+    type: 'video',
+    src: '/gallery/CVKLM NANDANA TED X RL HQ.mp4',
+    label: 'TEDx Moment 14',
+  },
+  {
+    type: 'video',
+    src: '/gallery/CVV AARUSHI TEDX CUTOUT HQ.mp4',
+    label: 'TEDx Moment 15',
+  },
+  {
+    type: 'video',
+    src: '/gallery/CVN TEDX ADHITHYAN CUTOUT REEL HQ.mp4',
+    label: 'TEDx Moment 16',
   },
 ];
 

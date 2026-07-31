@@ -47,20 +47,20 @@ export default function CollaboratorsPage() {
                 </div>
               </div>
             </div>
-            
+
             {/* Image Slider */}
             <div className="relative h-64 sm:h-96 lg:h-[600px] order-1 lg:order-2 w-full mt-10 lg:mt-0">
               <div className="transform transition-all duration-1000 delay-300 h-full w-full translate-x-0 opacity-100">
                 <div className="relative rounded-xl h-full w-full overflow-hidden">
                   {images.map((img, idx) => (
-                    <div 
-                      key={idx} 
+                    <div
+                      key={idx}
                       className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${idx === currentIdx ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                     >
-                      <Image 
-                        src={img} 
-                        alt={`Collaboration ${idx + 1}`} 
-                        fill 
+                      <Image
+                        src={img}
+                        alt={`Collaboration ${idx + 1}`}
+                        fill
                         className="object-cover"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
@@ -74,7 +74,7 @@ export default function CollaboratorsPage() {
             </div>
           </div>
         </div>
-        
+
         {/* Scroll Indicator */}
         <div className="absolute bottom-6 sm:bottom-8 left-4 sm:left-8 animate-bounce z-20">
           <div className="w-px h-6 sm:h-8 bg-gray-400"></div>
@@ -91,9 +91,9 @@ export default function CollaboratorsPage() {
             <div key={idx} className={`flex flex-col md:flex-row items-center gap-8 md:gap-16 ${idx % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
               <div className={`md:w-1/2 flex justify-center ${idx % 2 === 0 ? 'md:justify-end' : 'md:justify-start'}`}>
                 <div className="relative w-48 h-48 sm:w-64 sm:h-64 overflow-hidden rounded-xl shadow-lg bg-white p-6 flex items-center justify-center hover:scale-105 transition-transform duration-300 ring-1 ring-gray-100">
-                  <Image 
-                    src={collabImg} 
-                    alt={`Collaborator ${idx + 1}`} 
+                  <Image
+                    src={collabImg}
+                    alt={`Collaborator ${idx + 1}`}
                     className="object-contain w-full h-full"
                   />
                 </div>
