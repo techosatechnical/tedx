@@ -87,6 +87,20 @@ Across films, brands, and communication campaigns, Abhilash has spent years expl
   },
 ];
 
+const featuredVoice = [
+  {
+    id: 1,
+    name: "Air Commodore Prasanth Balakrishnan Nair",
+    designation: "Featured Voice",
+    bio: `Air Commodore Prasanth Balakrishnan Nair, known by his fighter-pilot call sign “PapaNair,” is a distinguished Indian Air Force officer, experimental test pilot and ISRO Gaganyatri. A recipient of the Kirti Chakra, India’s second-highest peacetime gallantry award, he has commanded a frontline Sukhoi Su-30MKI squadron and has nearly 3,000 hours of flying experience.
+
+An alumnus of the National Defence Academy and Air Force Academy, he received the President’s Plaque and Sword of Honour. He is a Category A Flying Instructor, a graduate of the Air Force Test Pilots School and the Yuri Gagarin Cosmonaut Training Centre, and has trained with NASA, SpaceX, ESA and JAXA as the backup astronaut for the Axiom-4 mission.
+
+He holds advanced degrees in strategic studies and aeronautics, including an MTech (Research) from IISc Bengaluru. His journey reflects courage, discipline, scholarship and a relentless drive to explore new frontiers.`,
+    image: "/PRASANT SIR.jpeg",
+  },
+];
+
 const GuidingVoiceCard = ({ speaker }: { speaker: typeof guidingVoices[0] }) => {
   const [expanded, setExpanded] = useState(false);
   const shortBio = speaker.bio.split('\n\n')[0];
@@ -217,7 +231,7 @@ export default function SpeakersPage() {
       </div>
 
       {/* Guiding Voices Section */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
         <div className="mb-10 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
             Guiding <span className="text-[#EB0028]">Voices</span>
@@ -277,6 +291,19 @@ export default function SpeakersPage() {
               onClick={() => scrollToIdx(idx)}
               className={`w-2 h-2 rounded-full cursor-pointer transition-colors ${idx === currentIndex ? 'bg-[#EB0028]' : 'bg-gray-300 hover:bg-gray-400'}`}
             ></div>
+          ))}
+        </div>
+      </div>
+
+      <div className="bg-[#EB0028] text-white py-16 sm:py-20 md:py-28 px-4 text-center mt-20">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Featured Voice</h1>
+      </div>
+
+      {/* Featured Voice Section */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+        <div className="flex flex-col gap-8">
+          {featuredVoice.map((speaker) => (
+            <GuidingVoiceCard key={speaker.id} speaker={speaker} />
           ))}
         </div>
       </div>
