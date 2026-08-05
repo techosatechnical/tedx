@@ -230,6 +230,21 @@ export default function SpeakersPage() {
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Voices of Becoming</h1>
       </div>
 
+      {/* Featured Voice Section */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
+        <div className="mb-10 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+            Featured <span className="text-[#EB0028]">Voice</span>
+          </h2>
+          <div className="w-16 h-1 bg-[#EB0028] mx-auto rounded-full" />
+        </div>
+        <div className="flex flex-col gap-8">
+          {featuredVoice.map((speaker) => (
+            <GuidingVoiceCard key={speaker.id} speaker={speaker} />
+          ))}
+        </div>
+      </div>
+
       {/* Guiding Voices Section */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
         <div className="mb-10 text-center">
@@ -295,18 +310,7 @@ export default function SpeakersPage() {
         </div>
       </div>
 
-      <div className="bg-[#EB0028] text-white py-16 sm:py-20 md:py-28 px-4 text-center mt-20">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Featured Voice</h1>
-      </div>
 
-      {/* Featured Voice Section */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
-        <div className="flex flex-col gap-8">
-          {featuredVoice.map((speaker) => (
-            <GuidingVoiceCard key={speaker.id} speaker={speaker} />
-          ))}
-        </div>
-      </div>
 
       <style dangerouslySetInnerHTML={{
         __html: `
