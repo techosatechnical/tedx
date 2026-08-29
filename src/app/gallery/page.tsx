@@ -278,7 +278,7 @@ export default function GalleryPage() {
             <>
               <div className="flex items-center gap-4 mb-8">
                 <div className="w-1 h-8 bg-[#EA0028] rounded-full" />
-                <h2 className="text-2xl font-bold text-gray-800">Videos</h2>
+                <h2 className="text-2xl font-bold text-gray-800"> Before The Red Dot</h2>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 mb-14">
                 {galleryItems.filter(i => i.type === 'video').map((item, idx) => (
@@ -289,31 +289,33 @@ export default function GalleryPage() {
           )}
 
           {/* Images Section */}
-          {galleryItems.some(i => i.type === 'image') && (
-            <>
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-1 h-8 bg-[#EA0028] rounded-full" />
-                <h2 className="text-2xl font-bold text-gray-800">Photos</h2>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {galleryItems.filter(i => i.type === 'image').map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg group bg-white cursor-pointer"
-                    onClick={() => setSelectedItem(item)}
-                  >
-                    <Image
-                      src={item.src}
-                      alt={item.label || `Gallery Image ${idx + 1}`}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 pointer-events-none" />
-                  </div>
-                ))}
-              </div>
-            </>
+          <div className="flex items-center gap-4 mb-8">
+            <div className="w-1 h-8 bg-[#EA0028] rounded-full" />
+            <h2 className="text-2xl font-bold text-gray-800">Beyond The Red Dot</h2>
+          </div>
+          {galleryItems.some(i => i.type === 'image') ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {galleryItems.filter(i => i.type === 'image').map((item, idx) => (
+                <div
+                  key={idx}
+                  className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg group bg-white cursor-pointer"
+                  onClick={() => setSelectedItem(item)}
+                >
+                  <Image
+                    src={item.src}
+                    alt={item.label || `Gallery Image ${idx + 1}`}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 pointer-events-none" />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="flex items-center justify-center py-12 bg-white/50 rounded-2xl border border-gray-200 border-dashed">
+              <p className="text-gray-500 text-lg">Images coming soon...</p>
+            </div>
           )}
 
         </div>
